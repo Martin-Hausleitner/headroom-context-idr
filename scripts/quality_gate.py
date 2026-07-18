@@ -16,6 +16,9 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "headroom-context-report.md"
 OUTPUT = ROOT / "QUALITY-GATE.md"
 RESULTS = ROOT / "quality-gate.json"
+PUBLIC_REPO_URL = "https://github.com/Martin-Hausleitner/headroom-context-idr"
+PUBLIC_BLOB_URL = f"{PUBLIC_REPO_URL}/blob/main/headroom-context-report.md"
+PUBLIC_REMOTE_URL = f"{PUBLIC_REPO_URL}.git"
 
 
 def check_url(url: str) -> tuple[str, bool, str]:
@@ -76,7 +79,12 @@ def main() -> None:
 
     pngs = list((ROOT / "proofs").glob("*.png"))
     valid_pngs = [path for path in pngs if path.read_bytes().startswith(b"\x89PNG\r\n\x1a\n") and path.stat().st_size > 10_000]
-    record("Drei echte Browser-Screenshots", len(valid_pngs) == 3, ", ".join(path.name for path in valid_pngs))
+    publication_screenshot = ROOT / "proofs" / "github-report-rendered.png"
+    record(
+        "Vier echte Browser-Screenshots inkl. GitHub-Render",
+        len(valid_pngs) == 4 and publication_screenshot in valid_pngs,
+        ", ".join(path.name for path in valid_pngs),
+    )
 
     links = re.findall(r"\[[^\]]+\]\(([^)]+)\)", report)
     local_links = sorted({link for link in links if not link.startswith(("http://", "https://"))})
@@ -92,6 +100,17 @@ def main() -> None:
         url_results = list(executor.map(check_url, external_links))
     bad_urls = [f"{url} ({status})" for url, passed, status in url_results if not passed]
     record("Externe Reportlinks erreichbar", not bad_urls, ", ".join(bad_urls) or str(len(url_results)))
+
+    remote = subprocess.run(
+        ["git", "remote", "get-url", "origin"],
+        check=True,
+        capture_output=True,
+        text=True,
+        timeout=10,
+    ).stdout.strip()
+    record("GitHub-Remote ist der öffentliche Ziel-Repo", remote == PUBLIC_REMOTE_URL, remote)
+    _, blob_passed, blob_status = check_url(PUBLIC_BLOB_URL)
+    record("Gerenderter GitHub-Blob öffentlich erreichbar", blob_passed and blob_status == "200", f"{PUBLIC_BLOB_URL} ({blob_status})")
 
     try:
         health = json.loads(urllib.request.urlopen("http://127.0.0.1:8787/health", timeout=10).read())
@@ -129,7 +148,7 @@ def main() -> None:
             "",
             "## Scope",
             "",
-            "Dieses Gate prüft Briefing-Vollständigkeit, Matrix- und Benchmark-Invarianten, NotebookLM-Provenienz, Link-/Screenshot-Beweise und den Live-Health-Status. Es ersetzt keine Produktions-Canary mit privaten realen Prompts.",
+            "Dieses Gate prüft Briefing-Vollständigkeit, Matrix- und Benchmark-Invarianten, NotebookLM-Provenienz, Link-/Screenshot-Beweise, die öffentliche GitHub-Publikation und den Live-Health-Status. Es ersetzt keine Produktions-Canary mit privaten realen Prompts.",
             "",
         ]
     )

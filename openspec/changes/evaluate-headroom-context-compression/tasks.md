@@ -20,4 +20,4 @@
 
 - [x] 4.1 Validate OpenSpec, matrix invariants, links, Markdown, and benchmark reproducibility
 - [x] 4.2 Perform the F1 read gate and adversarial review against every brief requirement
-- [ ] 4.3 Commit, create the GitHub repository, push `main`, and verify the rendered blob URL
+- [x] 4.3 Commit, create the GitHub repository, push `main`, and verify the rendered blob URL

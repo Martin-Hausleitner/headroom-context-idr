@@ -1,6 +1,6 @@
 # Headroom Context IDR
 
-[Vollständiger IDR-Report](headroom-context-report.md) · [Feature Matrix](docs/FEATURE_MATRIX.md) · [50×60 Repo-Matrix](data/repository-matrix.csv) · [Quality Gate](QUALITY-GATE.md)
+[Vollständiger IDR-Report](headroom-context-report.md) · [Öffentlich gerenderter Report](https://github.com/Martin-Hausleitner/headroom-context-idr/blob/main/headroom-context-report.md) · [Feature Matrix](docs/FEATURE_MATRIX.md) · [50×60 Repo-Matrix](data/repository-matrix.csv) · [Quality Gate](QUALITY-GATE.md)
 
 Reproduzierbare Untersuchung einer billigen Prompt-Enhance-/Compression-Stufe vor Headroom 0.31.0.
 
@@ -31,3 +31,4 @@ Der Benchmark benötigt Headroom 0.31.0 im Host-Python, `llmlingua==0.2.2` in `.
 - `research/notebooklm/queries.json`: fünf echte NotebookLM-Cross-Queries
 - `research/github-metadata.json`: GitHub-API-Snapshot
 - `proofs/`: Browser-Screenshots der Live-/Primärquellenflächen
+- `proofs/github-report-rendered.png`: visuell geprüfter GitHub-Render des finalen Reports

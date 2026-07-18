@@ -1,6 +1,6 @@
 # Quality Gate
 
-**Verdikt: PASS — 26/26 Checks bestanden.**
+**Verdikt: PASS — 28/28 Checks bestanden.**
 
 | Check | Ergebnis | Evidenz |
 |---|:---:|---|
@@ -25,12 +25,14 @@
 | Fünf NotebookLM-Cross-Queries | PASS | 5 |
 | Alle NotebookLM-Antworten nichtleer | PASS | queries.json |
 | 40 Quellen im Manifest | PASS | 40 |
-| Drei echte Browser-Screenshots | PASS | headroom-dashboard.png, claw-compactor-github.png, llmlingua-github.png |
+| Vier echte Browser-Screenshots inkl. GitHub-Render | PASS | headroom-dashboard.png, claw-compactor-github.png, llmlingua-github.png, github-report-rendered.png |
 | Alle lokalen Reportlinks vorhanden | PASS | 9 |
 | Externe Reportlinks erreichbar | PASS | 37 |
+| GitHub-Remote ist der öffentliche Ziel-Repo | PASS | https://github.com/Martin-Hausleitner/headroom-context-idr.git |
+| Gerenderter GitHub-Blob öffentlich erreichbar | PASS | https://github.com/Martin-Hausleitner/headroom-context-idr/blob/main/headroom-context-report.md (200) |
 | Live Headroom gesund | PASS | {"status": "healthy", "ready": true, "version": "0.31.0"} |
 | NotebookLM hat 40 verarbeitete Quellen | PASS | count=40 |
 
 ## Scope
 
-Dieses Gate prüft Briefing-Vollständigkeit, Matrix- und Benchmark-Invarianten, NotebookLM-Provenienz, Link-/Screenshot-Beweise und den Live-Health-Status. Es ersetzt keine Produktions-Canary mit privaten realen Prompts.
+Dieses Gate prüft Briefing-Vollständigkeit, Matrix- und Benchmark-Invarianten, NotebookLM-Provenienz, Link-/Screenshot-Beweise, die öffentliche GitHub-Publikation und den Live-Health-Status. Es ersetzt keine Produktions-Canary mit privaten realen Prompts.

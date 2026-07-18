@@ -1,7 +1,7 @@
 {
   "verdict": "PASS",
-  "passed": 26,
-  "total": 26,
+  "passed": 28,
+  "total": 28,
   "checks": [
     {
       "name": "Reportkopf IDR: ja",
@@ -109,9 +109,9 @@
       "evidence": "40"
     },
     {
-      "name": "Drei echte Browser-Screenshots",
+      "name": "Vier echte Browser-Screenshots inkl. GitHub-Render",
       "passed": true,
-      "evidence": "headroom-dashboard.png, claw-compactor-github.png, llmlingua-github.png"
+      "evidence": "headroom-dashboard.png, claw-compactor-github.png, llmlingua-github.png, github-report-rendered.png"
     },
     {
       "name": "Alle lokalen Reportlinks vorhanden",
@@ -122,6 +122,16 @@
       "name": "Externe Reportlinks erreichbar",
       "passed": true,
       "evidence": "37"
+    },
+    {
+      "name": "GitHub-Remote ist der öffentliche Ziel-Repo",
+      "passed": true,
+      "evidence": "https://github.com/Martin-Hausleitner/headroom-context-idr.git"
+    },
+    {
+      "name": "Gerenderter GitHub-Blob öffentlich erreichbar",
+      "passed": true,
+      "evidence": "https://github.com/Martin-Hausleitner/headroom-context-idr/blob/main/headroom-context-report.md (200)"
     },
     {
       "name": "Live Headroom gesund",
