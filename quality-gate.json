@@ -1,0 +1,137 @@
+{
+  "verdict": "PASS",
+  "passed": 26,
+  "total": 26,
+  "checks": [
+    {
+      "name": "Reportkopf IDR: ja",
+      "passed": true,
+      "evidence": "headroom-context-report.md"
+    },
+    {
+      "name": "NotebookLM-Link im Kopf",
+      "passed": true,
+      "evidence": "https://notebooklm.google.com/notebook/4cbe42bf-f9ec-4c8b-8b6c-e6501f50478b"
+    },
+    {
+      "name": "Mermaid-Architektur",
+      "passed": true,
+      "evidence": "Zielarchitektur"
+    },
+    {
+      "name": "100-Punkte-Rubrik",
+      "passed": true,
+      "evidence": "Rubriktabelle"
+    },
+    {
+      "name": "Krone im Report",
+      "passed": true,
+      "evidence": "genau eine empfohlene Repo-Krone"
+    },
+    {
+      "name": "50 Repository-Zeilen",
+      "passed": true,
+      "evidence": "50"
+    },
+    {
+      "name": "Mindestens 50 Matrixfelder",
+      "passed": true,
+      "evidence": "60"
+    },
+    {
+      "name": "Genau eine Matrix-Krone",
+      "passed": true,
+      "evidence": "open-compress/claw-compactor"
+    },
+    {
+      "name": "Alle Scores summieren korrekt",
+      "passed": true,
+      "evidence": "50/50"
+    },
+    {
+      "name": "Alle Scores in 0..100",
+      "passed": true,
+      "evidence": "total_100"
+    },
+    {
+      "name": "Drei lange Promptklassen",
+      "passed": true,
+      "evidence": "code_debug, prose_rag, structured_json"
+    },
+    {
+      "name": "Zehn gemessene Methoden",
+      "passed": true,
+      "evidence": "10"
+    },
+    {
+      "name": "30 Benchmark-Messzeilen",
+      "passed": true,
+      "evidence": "30"
+    },
+    {
+      "name": "Zwei Tokenizer",
+      "passed": true,
+      "evidence": "cl100k_base, o200k_base"
+    },
+    {
+      "name": "Token-Savings arithmetisch korrekt",
+      "passed": true,
+      "evidence": "30/30"
+    },
+    {
+      "name": "LLMLingua real ausgeführt",
+      "passed": true,
+      "evidence": "microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank"
+    },
+    {
+      "name": "Claw gepinnt und ausgeführt",
+      "passed": true,
+      "evidence": "c1b936d40b1145c7a257bd6e34a17994f467495f"
+    },
+    {
+      "name": "Flash compaction real ausgeführt",
+      "passed": true,
+      "evidence": "Gemini 3.5 Flash Low"
+    },
+    {
+      "name": "Fünf NotebookLM-Cross-Queries",
+      "passed": true,
+      "evidence": "5"
+    },
+    {
+      "name": "Alle NotebookLM-Antworten nichtleer",
+      "passed": true,
+      "evidence": "queries.json"
+    },
+    {
+      "name": "40 Quellen im Manifest",
+      "passed": true,
+      "evidence": "40"
+    },
+    {
+      "name": "Drei echte Browser-Screenshots",
+      "passed": true,
+      "evidence": "headroom-dashboard.png, claw-compactor-github.png, llmlingua-github.png"
+    },
+    {
+      "name": "Alle lokalen Reportlinks vorhanden",
+      "passed": true,
+      "evidence": "9"
+    },
+    {
+      "name": "Externe Reportlinks erreichbar",
+      "passed": true,
+      "evidence": "37"
+    },
+    {
+      "name": "Live Headroom gesund",
+      "passed": true,
+      "evidence": "{\"status\": \"healthy\", \"ready\": true, \"version\": \"0.31.0\"}"
+    },
+    {
+      "name": "NotebookLM hat 40 verarbeitete Quellen",
+      "passed": true,
+      "evidence": "count=40"
+    }
+  ]
+}

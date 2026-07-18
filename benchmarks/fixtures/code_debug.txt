@@ -1,0 +1,369 @@
+[SYSTEM] Do not rename functions, alter exact error strings, or remove the idempotency invariant.
+[USER] Diagnose why PaymentWriter duplicated a charge and propose the smallest safe patch.
+
+```python
+def normalize_record_1(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-01"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_2(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-02"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_3(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-03"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_4(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-04"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_5(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-05"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_6(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-06"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_7(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-07"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_8(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-08"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_9(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-09"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_10(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-10"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_11(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-11"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_12(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-12"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_13(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-13"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_14(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-14"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_15(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-15"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_16(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-16"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_17(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-17"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_18(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-18"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_19(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-19"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_20(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-20"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_21(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-21"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_22(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-22"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_23(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-23"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_24(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-24"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_25(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-25"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_26(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-26"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_27(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-27"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_28(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-28"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_29(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-29"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_30(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-30"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_31(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-31"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_32(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-32"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_33(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-33"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_34(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-34"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+def normalize_record_35(record: dict) -> dict:
+    normalized = dict(record)
+    normalized["module"] = "module-35"
+    normalized["status"] = normalized.get("status", "ok")
+    return normalized
+class PaymentWriter:
+    def commit_payment(self, payload: dict) -> None:
+        key = payload.get("idempotency-key")
+        if not key:
+            raise RuntimeError("CRITICAL-771 idempotency-key missing")
+        self.store.insert_once(key, payload)
+```
+
+Required invariant: idempotency-key must be checked before store.insert_once.
+
+2026-07-18T12:00:00Z INFO worker=0 batch=0 status=ok
+2026-07-18T12:01:00Z INFO worker=1 batch=1 status=ok
+2026-07-18T12:02:00Z INFO worker=2 batch=2 status=ok
+2026-07-18T12:03:00Z INFO worker=3 batch=3 status=ok
+2026-07-18T12:04:00Z INFO worker=4 batch=4 status=ok
+2026-07-18T12:05:00Z INFO worker=5 batch=5 status=ok
+2026-07-18T12:06:00Z INFO worker=6 batch=6 status=ok
+2026-07-18T12:07:00Z INFO worker=7 batch=7 status=ok
+2026-07-18T12:08:00Z INFO worker=0 batch=8 status=ok
+2026-07-18T12:09:00Z INFO worker=1 batch=9 status=ok
+2026-07-18T12:10:00Z INFO worker=2 batch=10 status=ok
+2026-07-18T12:11:00Z INFO worker=3 batch=11 status=ok
+2026-07-18T12:12:00Z INFO worker=4 batch=12 status=ok
+2026-07-18T12:13:00Z INFO worker=5 batch=13 status=ok
+2026-07-18T12:14:00Z INFO worker=6 batch=14 status=ok
+2026-07-18T12:15:00Z INFO worker=7 batch=15 status=ok
+2026-07-18T12:16:00Z INFO worker=0 batch=16 status=ok
+2026-07-18T12:17:00Z INFO worker=1 batch=17 status=ok
+2026-07-18T12:18:00Z INFO worker=2 batch=18 status=ok
+2026-07-18T12:19:00Z INFO worker=3 batch=19 status=ok
+2026-07-18T12:20:00Z INFO worker=4 batch=20 status=ok
+2026-07-18T12:21:00Z INFO worker=5 batch=21 status=ok
+2026-07-18T12:22:00Z INFO worker=6 batch=22 status=ok
+2026-07-18T12:23:00Z INFO worker=7 batch=23 status=ok
+2026-07-18T12:24:00Z INFO worker=0 batch=24 status=ok
+2026-07-18T12:25:00Z INFO worker=1 batch=25 status=ok
+2026-07-18T12:26:00Z INFO worker=2 batch=26 status=ok
+2026-07-18T12:27:00Z INFO worker=3 batch=27 status=ok
+2026-07-18T12:28:00Z INFO worker=4 batch=28 status=ok
+2026-07-18T12:29:00Z INFO worker=5 batch=29 status=ok
+2026-07-18T12:30:00Z INFO worker=6 batch=30 status=ok
+2026-07-18T12:31:00Z INFO worker=7 batch=31 status=ok
+2026-07-18T12:32:00Z INFO worker=0 batch=32 status=ok
+2026-07-18T12:33:00Z INFO worker=1 batch=33 status=ok
+2026-07-18T12:34:00Z INFO worker=2 batch=34 status=ok
+2026-07-18T12:35:00Z INFO worker=3 batch=35 status=ok
+2026-07-18T12:36:00Z INFO worker=4 batch=36 status=ok
+2026-07-18T12:37:00Z INFO worker=5 batch=37 status=ok
+2026-07-18T12:38:00Z INFO worker=6 batch=38 status=ok
+2026-07-18T12:39:00Z INFO worker=7 batch=39 status=ok
+2026-07-18T12:40:00Z INFO worker=0 batch=40 status=ok
+2026-07-18T12:41:00Z INFO worker=1 batch=41 status=ok
+2026-07-18T12:42:00Z INFO worker=2 batch=42 status=ok
+2026-07-18T12:43:00Z INFO worker=3 batch=43 status=ok
+2026-07-18T12:44:00Z INFO worker=4 batch=44 status=ok
+2026-07-18T12:45:00Z INFO worker=5 batch=45 status=ok
+2026-07-18T12:46:00Z INFO worker=6 batch=46 status=ok
+2026-07-18T12:47:00Z INFO worker=7 batch=47 status=ok
+2026-07-18T12:48:00Z INFO worker=0 batch=48 status=ok
+2026-07-18T12:49:00Z INFO worker=1 batch=49 status=ok
+2026-07-18T12:50:00Z INFO worker=2 batch=50 status=ok
+2026-07-18T12:51:00Z INFO worker=3 batch=51 status=ok
+2026-07-18T12:52:00Z INFO worker=4 batch=52 status=ok
+2026-07-18T12:53:00Z INFO worker=5 batch=53 status=ok
+2026-07-18T12:54:00Z INFO worker=6 batch=54 status=ok
+2026-07-18T12:55:00Z INFO worker=7 batch=55 status=ok
+2026-07-18T12:56:00Z INFO worker=0 batch=56 status=ok
+2026-07-18T12:57:00Z INFO worker=1 batch=57 status=ok
+2026-07-18T12:58:00Z INFO worker=2 batch=58 status=ok
+2026-07-18T12:59:00Z INFO worker=3 batch=59 status=ok
+2026-07-18T12:00:00Z INFO worker=4 batch=60 status=ok
+2026-07-18T12:01:00Z INFO worker=5 batch=61 status=ok
+2026-07-18T12:02:00Z INFO worker=6 batch=62 status=ok
+2026-07-18T12:03:00Z INFO worker=7 batch=63 status=ok
+2026-07-18T12:04:00Z INFO worker=0 batch=64 status=ok
+2026-07-18T12:05:00Z INFO worker=1 batch=65 status=ok
+2026-07-18T12:06:00Z INFO worker=2 batch=66 status=ok
+2026-07-18T12:07:00Z INFO worker=3 batch=67 status=ok
+2026-07-18T12:08:00Z INFO worker=4 batch=68 status=ok
+2026-07-18T12:09:00Z INFO worker=5 batch=69 status=ok
+2026-07-18T12:10:00Z INFO worker=6 batch=70 status=ok
+2026-07-18T12:11:00Z INFO worker=7 batch=71 status=ok
+2026-07-18T12:12:00Z INFO worker=0 batch=72 status=ok
+2026-07-18T12:13:00Z INFO worker=1 batch=73 status=ok
+2026-07-18T12:14:00Z INFO worker=2 batch=74 status=ok
+2026-07-18T12:15:00Z INFO worker=3 batch=75 status=ok
+2026-07-18T12:16:00Z INFO worker=4 batch=76 status=ok
+2026-07-18T12:17:00Z INFO worker=5 batch=77 status=ok
+2026-07-18T12:18:00Z INFO worker=6 batch=78 status=ok
+2026-07-18T12:19:00Z INFO worker=7 batch=79 status=ok
+2026-07-18T12:20:00Z INFO worker=0 batch=80 status=ok
+2026-07-18T12:21:00Z INFO worker=1 batch=81 status=ok
+2026-07-18T12:22:00Z INFO worker=2 batch=82 status=ok
+2026-07-18T12:23:00Z INFO worker=3 batch=83 status=ok
+2026-07-18T12:24:00Z INFO worker=4 batch=84 status=ok
+2026-07-18T12:25:00Z INFO worker=5 batch=85 status=ok
+2026-07-18T12:26:00Z INFO worker=6 batch=86 status=ok
+2026-07-18T12:27:00Z INFO worker=7 batch=87 status=ok
+2026-07-18T12:28:00Z INFO worker=0 batch=88 status=ok
+2026-07-18T12:29:00Z INFO worker=1 batch=89 status=ok
+2026-07-18T12:30:00Z INFO worker=2 batch=90 status=ok
+2026-07-18T12:31:00Z INFO worker=3 batch=91 status=ok
+2026-07-18T12:32:00Z INFO worker=4 batch=92 status=ok
+2026-07-18T12:33:00Z INFO worker=5 batch=93 status=ok
+2026-07-18T12:34:00Z INFO worker=6 batch=94 status=ok
+2026-07-18T12:35:00Z INFO worker=7 batch=95 status=ok
+2026-07-18T12:36:00Z INFO worker=0 batch=96 status=ok
+2026-07-18T12:37:00Z INFO worker=1 batch=97 status=ok
+2026-07-18T12:38:00Z INFO worker=2 batch=98 status=ok
+2026-07-18T12:39:00Z INFO worker=3 batch=99 status=ok
+2026-07-18T12:40:00Z INFO worker=4 batch=100 status=ok
+2026-07-18T12:41:00Z INFO worker=5 batch=101 status=ok
+2026-07-18T12:42:00Z INFO worker=6 batch=102 status=ok
+2026-07-18T12:43:00Z INFO worker=7 batch=103 status=ok
+2026-07-18T12:44:00Z INFO worker=0 batch=104 status=ok
+2026-07-18T12:45:00Z INFO worker=1 batch=105 status=ok
+2026-07-18T12:46:00Z INFO worker=2 batch=106 status=ok
+2026-07-18T12:47:00Z INFO worker=3 batch=107 status=ok
+2026-07-18T12:48:00Z INFO worker=4 batch=108 status=ok
+2026-07-18T12:49:00Z INFO worker=5 batch=109 status=ok
+2026-07-18T12:50:00Z INFO worker=6 batch=110 status=ok
+2026-07-18T12:51:00Z INFO worker=7 batch=111 status=ok
+2026-07-18T12:52:00Z INFO worker=0 batch=112 status=ok
+2026-07-18T12:53:00Z INFO worker=1 batch=113 status=ok
+2026-07-18T12:54:00Z INFO worker=2 batch=114 status=ok
+2026-07-18T12:55:00Z INFO worker=3 batch=115 status=ok
+2026-07-18T12:56:00Z INFO worker=4 batch=116 status=ok
+2026-07-18T12:57:00Z ERROR PaymentWriter idempotency-key missing CRITICAL-771 amount=9917.42
+2026-07-18T12:58:00Z INFO worker=6 batch=118 status=ok
+2026-07-18T12:59:00Z INFO worker=7 batch=119 status=ok
+2026-07-18T12:00:00Z INFO worker=0 batch=120 status=ok
+2026-07-18T12:01:00Z INFO worker=1 batch=121 status=ok
+2026-07-18T12:02:00Z INFO worker=2 batch=122 status=ok
+2026-07-18T12:03:00Z INFO worker=3 batch=123 status=ok
+2026-07-18T12:04:00Z INFO worker=4 batch=124 status=ok
+2026-07-18T12:05:00Z INFO worker=5 batch=125 status=ok
+2026-07-18T12:06:00Z INFO worker=6 batch=126 status=ok
+2026-07-18T12:07:00Z INFO worker=7 batch=127 status=ok
+2026-07-18T12:08:00Z INFO worker=0 batch=128 status=ok
+2026-07-18T12:09:00Z INFO worker=1 batch=129 status=ok
+2026-07-18T12:10:00Z INFO worker=2 batch=130 status=ok
+2026-07-18T12:11:00Z INFO worker=3 batch=131 status=ok
+2026-07-18T12:12:00Z INFO worker=4 batch=132 status=ok
+2026-07-18T12:13:00Z INFO worker=5 batch=133 status=ok
+2026-07-18T12:14:00Z INFO worker=6 batch=134 status=ok
+2026-07-18T12:15:00Z INFO worker=7 batch=135 status=ok
+2026-07-18T12:16:00Z INFO worker=0 batch=136 status=ok
+2026-07-18T12:17:00Z INFO worker=1 batch=137 status=ok
+2026-07-18T12:18:00Z INFO worker=2 batch=138 status=ok
+2026-07-18T12:19:00Z INFO worker=3 batch=139 status=ok
+2026-07-18T12:20:00Z INFO worker=4 batch=140 status=ok
+2026-07-18T12:21:00Z INFO worker=5 batch=141 status=ok
+2026-07-18T12:22:00Z INFO worker=6 batch=142 status=ok
+2026-07-18T12:23:00Z INFO worker=7 batch=143 status=ok
+2026-07-18T12:24:00Z INFO worker=0 batch=144 status=ok
+2026-07-18T12:25:00Z INFO worker=1 batch=145 status=ok
+2026-07-18T12:26:00Z INFO worker=2 batch=146 status=ok
+2026-07-18T12:27:00Z INFO worker=3 batch=147 status=ok
+2026-07-18T12:28:00Z INFO worker=4 batch=148 status=ok
+2026-07-18T12:29:00Z INFO worker=5 batch=149 status=ok
+2026-07-18T12:30:00Z INFO worker=6 batch=150 status=ok
+2026-07-18T12:31:00Z INFO worker=7 batch=151 status=ok
+2026-07-18T12:32:00Z INFO worker=0 batch=152 status=ok
+2026-07-18T12:33:00Z INFO worker=1 batch=153 status=ok
+2026-07-18T12:34:00Z INFO worker=2 batch=154 status=ok
+2026-07-18T12:35:00Z INFO worker=3 batch=155 status=ok
+2026-07-18T12:36:00Z INFO worker=4 batch=156 status=ok
+2026-07-18T12:37:00Z INFO worker=5 batch=157 status=ok
+2026-07-18T12:38:00Z INFO worker=6 batch=158 status=ok
+2026-07-18T12:39:00Z INFO worker=7 batch=159 status=ok
+2026-07-18T12:40:00Z INFO worker=0 batch=160 status=ok
+2026-07-18T12:41:00Z INFO worker=1 batch=161 status=ok
+2026-07-18T12:42:00Z INFO worker=2 batch=162 status=ok
+2026-07-18T12:43:00Z INFO worker=3 batch=163 status=ok
+2026-07-18T12:44:00Z INFO worker=4 batch=164 status=ok
+2026-07-18T12:45:00Z INFO worker=5 batch=165 status=ok
+2026-07-18T12:46:00Z INFO worker=6 batch=166 status=ok
+2026-07-18T12:47:00Z INFO worker=7 batch=167 status=ok
+2026-07-18T12:48:00Z INFO worker=0 batch=168 status=ok
+2026-07-18T12:49:00Z INFO worker=1 batch=169 status=ok
+2026-07-18T12:50:00Z INFO worker=2 batch=170 status=ok
+2026-07-18T12:51:00Z INFO worker=3 batch=171 status=ok
+2026-07-18T12:52:00Z INFO worker=4 batch=172 status=ok
+2026-07-18T12:53:00Z INFO worker=5 batch=173 status=ok
+2026-07-18T12:54:00Z INFO worker=6 batch=174 status=ok
+2026-07-18T12:55:00Z INFO worker=7 batch=175 status=ok
+2026-07-18T12:56:00Z INFO worker=0 batch=176 status=ok
+2026-07-18T12:57:00Z INFO worker=1 batch=177 status=ok
+2026-07-18T12:58:00Z INFO worker=2 batch=178 status=ok
+2026-07-18T12:59:00Z INFO worker=3 batch=179 status=ok

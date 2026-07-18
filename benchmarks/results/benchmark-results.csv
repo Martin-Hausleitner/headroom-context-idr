@@ -1,0 +1,31 @@
+fixture,method,before_cl100k,after_cl100k,saved_cl100k,savings_pct_cl100k,before_o200k,after_o200k,savings_pct_o200k,latency_ms,fact_recall_pct,protected_span_integrity_pct,quality_pct,evidence
+prose_rag,original,8434,8434,0,0.0,8432,8432,0.0,0.0,100.0,100.0,100.0,measured local
+prose_rag,lossless_cleanup,8434,8389,45,0.53,8432,8387,0.53,2.01,100.0,100.0,100.0,measured local
+prose_rag,query_aware_lexical,8434,2527,5907,70.04,8432,2525,70.05,11.55,100.0,100.0,100.0,measured local baseline
+prose_rag,headroom_0.31_router,8434,8434,0,0.0,8432,8432,0.0,2914.86,100.0,100.0,100.0,measured installed package
+prose_rag,llmlingua2_mbert_cpu,8434,3964,4470,53.0,8432,3962,53.01,31646.05,40.0,0.0,28.0,measured local model
+prose_rag,agy_gemini_3.5_flash_low_compaction,8434,123,8311,98.54,8432,121,98.56,7662.59,100.0,100.0,100.0,measured remote cheap model
+prose_rag,agy_gemini_3.5_flash_low_enhancement,8434,8551,-117,-1.39,8432,8548,-1.38,21221.55,100.0,0.0,70.0,measured remote cheap model
+prose_rag,kv_cache_only_reference,8434,8434,0,0.0,8432,8432,0.0,0.0,100.0,100.0,100.0,analytical control: transmitted text unchanged
+code_debug,original,6093,6093,0,0.0,6087,6087,0.0,0.0,100.0,100.0,100.0,measured local
+code_debug,lossless_cleanup,6093,5948,145,2.38,6087,5942,2.38,0.83,100.0,100.0,100.0,measured local
+code_debug,query_aware_lexical,6093,2878,3215,52.77,6087,2872,52.82,3.67,100.0,100.0,100.0,measured local baseline
+code_debug,headroom_0.31_router,6093,3810,2283,37.47,6087,3804,37.51,6797.65,100.0,0.0,70.0,measured installed package
+code_debug,llmlingua2_mbert_cpu,6093,4183,1910,31.35,6087,4177,31.38,28460.01,20.0,0.0,14.0,measured local model
+code_debug,agy_gemini_3.5_flash_low_compaction,6093,152,5941,97.51,6087,146,97.6,4954.11,100.0,100.0,100.0,measured remote cheap model
+code_debug,agy_gemini_3.5_flash_low_enhancement,6093,6199,-106,-1.74,6087,6191,-1.71,16085.93,100.0,100.0,100.0,measured remote cheap model
+code_debug,kv_cache_only_reference,6093,6093,0,0.0,6087,6087,0.0,0.0,100.0,100.0,100.0,analytical control: transmitted text unchanged
+structured_json,original,14631,14631,0,0.0,14631,14631,0.0,0.0,100.0,100.0,100.0,measured local
+structured_json,lossless_cleanup,14631,12547,2084,14.24,14631,12547,14.24,3.66,100.0,100.0,100.0,measured local
+structured_json,query_aware_lexical,14631,4197,10434,71.31,14631,4197,71.31,14.27,100.0,100.0,100.0,measured local baseline
+structured_json,headroom_0.31_router,14631,10156,4475,30.59,14631,10156,30.59,20291.7,100.0,0.0,70.0,measured installed package
+structured_json,llmlingua2_mbert_cpu,14631,8800,5831,39.85,14631,8800,39.85,50877.24,20.0,0.0,14.0,measured local model
+structured_json,agy_gemini_3.5_flash_low_compaction,14631,162,14469,98.89,14631,162,98.89,5510.08,100.0,100.0,100.0,measured remote cheap model
+structured_json,agy_gemini_3.5_flash_low_enhancement,14631,14758,-127,-0.87,14631,14757,-0.86,48288.21,100.0,100.0,100.0,measured remote cheap model
+structured_json,kv_cache_only_reference,14631,14631,0,0.0,14631,14631,0.0,0.0,100.0,100.0,100.0,analytical control: transmitted text unchanged
+prose_rag,claw_compactor_7.0_text,8434,1074,7360,87.27,8432,1072,87.29,912.51,100.0,0.0,70.0,measured pinned Git clone c1b936d40b1145c7a257bd6e34a17994f467495f
+prose_rag,claw_compactor_7.1_messages,8434,1073,7361,87.28,8432,1071,87.3,1113.51,100.0,0.0,70.0,measured pinned Git clone c1b936d40b1145c7a257bd6e34a17994f467495f
+code_debug,claw_compactor_7.0_text,6093,1764,4329,71.05,6087,1758,71.12,95.52,100.0,100.0,100.0,measured pinned Git clone c1b936d40b1145c7a257bd6e34a17994f467495f
+code_debug,claw_compactor_7.1_messages,6093,1763,4330,71.07,6087,1757,71.14,14.87,100.0,0.0,70.0,measured pinned Git clone c1b936d40b1145c7a257bd6e34a17994f467495f
+structured_json,claw_compactor_7.0_text,14631,7998,6633,45.34,14631,7998,45.34,1387.26,60.0,0.0,42.0,measured pinned Git clone c1b936d40b1145c7a257bd6e34a17994f467495f
+structured_json,claw_compactor_7.1_messages,14631,7999,6632,45.33,14631,7999,45.33,1498.29,60.0,100.0,72.0,measured pinned Git clone c1b936d40b1145c7a257bd6e34a17994f467495f

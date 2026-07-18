@@ -1,0 +1,2088 @@
+[SYSTEM] JSON keys, schema_version, record IDs, amounts, policies, and regions are exact protected data.
+[USER] Find the blocked record and state the required action without deleting audit evidence.
+{
+  "schema_version": "ledger.v3",
+  "required_action": "investigate blocked record without deleting evidence",
+  "records": [
+    {
+      "record_id": "rec-0000",
+      "tenant": "tenant-00",
+      "amount": 10.0,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 0,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0001",
+      "tenant": "tenant-01",
+      "amount": 11.17,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 0,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0002",
+      "tenant": "tenant-02",
+      "amount": 12.34,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 0,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0003",
+      "tenant": "tenant-03",
+      "amount": 13.51,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 0,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0004",
+      "tenant": "tenant-04",
+      "amount": 14.68,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 0,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0005",
+      "tenant": "tenant-05",
+      "amount": 15.85,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 0,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0006",
+      "tenant": "tenant-06",
+      "amount": 17.02,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 0,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0007",
+      "tenant": "tenant-07",
+      "amount": 18.19,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 0,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0008",
+      "tenant": "tenant-08",
+      "amount": 19.36,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 0,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0009",
+      "tenant": "tenant-09",
+      "amount": 20.53,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 0,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0010",
+      "tenant": "tenant-10",
+      "amount": 21.7,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 1,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0011",
+      "tenant": "tenant-11",
+      "amount": 22.87,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 1,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0012",
+      "tenant": "tenant-00",
+      "amount": 24.04,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 1,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0013",
+      "tenant": "tenant-01",
+      "amount": 25.21,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 1,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0014",
+      "tenant": "tenant-02",
+      "amount": 26.38,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 1,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0015",
+      "tenant": "tenant-03",
+      "amount": 27.55,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 1,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0016",
+      "tenant": "tenant-04",
+      "amount": 28.72,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 1,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0017",
+      "tenant": "tenant-05",
+      "amount": 29.89,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 1,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0018",
+      "tenant": "tenant-06",
+      "amount": 31.06,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 1,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0019",
+      "tenant": "tenant-07",
+      "amount": 32.23,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 1,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0020",
+      "tenant": "tenant-08",
+      "amount": 33.4,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 2,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0021",
+      "tenant": "tenant-09",
+      "amount": 34.57,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 2,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0022",
+      "tenant": "tenant-10",
+      "amount": 35.74,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 2,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0023",
+      "tenant": "tenant-11",
+      "amount": 36.91,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 2,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0024",
+      "tenant": "tenant-00",
+      "amount": 38.08,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 2,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0025",
+      "tenant": "tenant-01",
+      "amount": 39.25,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 2,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0026",
+      "tenant": "tenant-02",
+      "amount": 40.42,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 2,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0027",
+      "tenant": "tenant-03",
+      "amount": 41.59,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 2,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0028",
+      "tenant": "tenant-04",
+      "amount": 42.76,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 2,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0029",
+      "tenant": "tenant-05",
+      "amount": 43.93,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 2,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0030",
+      "tenant": "tenant-06",
+      "amount": 45.1,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 3,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0031",
+      "tenant": "tenant-07",
+      "amount": 46.27,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 3,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0032",
+      "tenant": "tenant-08",
+      "amount": 47.44,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 3,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0033",
+      "tenant": "tenant-09",
+      "amount": 48.61,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 3,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0034",
+      "tenant": "tenant-10",
+      "amount": 49.78,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 3,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0035",
+      "tenant": "tenant-11",
+      "amount": 50.95,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 3,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0036",
+      "tenant": "tenant-00",
+      "amount": 52.12,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 3,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0037",
+      "tenant": "tenant-01",
+      "amount": 53.29,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 3,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0038",
+      "tenant": "tenant-02",
+      "amount": 54.46,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 3,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0039",
+      "tenant": "tenant-03",
+      "amount": 55.63,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 3,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0040",
+      "tenant": "tenant-04",
+      "amount": 56.8,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 4,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0041",
+      "tenant": "tenant-05",
+      "amount": 57.97,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 4,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0042",
+      "tenant": "tenant-06",
+      "amount": 59.14,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 4,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0043",
+      "tenant": "tenant-07",
+      "amount": 60.31,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 4,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0044",
+      "tenant": "tenant-08",
+      "amount": 61.48,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 4,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0045",
+      "tenant": "tenant-09",
+      "amount": 62.65,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 4,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0046",
+      "tenant": "tenant-10",
+      "amount": 63.82,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 4,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0047",
+      "tenant": "tenant-11",
+      "amount": 64.99,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 4,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0048",
+      "tenant": "tenant-00",
+      "amount": 66.16,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 4,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0049",
+      "tenant": "tenant-01",
+      "amount": 67.33,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 4,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0050",
+      "tenant": "tenant-02",
+      "amount": 68.5,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 5,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0051",
+      "tenant": "tenant-03",
+      "amount": 69.67,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 5,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0052",
+      "tenant": "tenant-04",
+      "amount": 70.84,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 5,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0053",
+      "tenant": "tenant-05",
+      "amount": 72.01,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 5,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0054",
+      "tenant": "tenant-06",
+      "amount": 73.18,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 5,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0055",
+      "tenant": "tenant-07",
+      "amount": 74.35,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 5,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0056",
+      "tenant": "tenant-08",
+      "amount": 75.52,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 5,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0057",
+      "tenant": "tenant-09",
+      "amount": 76.69,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 5,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0058",
+      "tenant": "tenant-10",
+      "amount": 77.86,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 5,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0059",
+      "tenant": "tenant-11",
+      "amount": 79.03,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 5,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0060",
+      "tenant": "tenant-00",
+      "amount": 80.2,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 6,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0061",
+      "tenant": "tenant-01",
+      "amount": 81.37,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 6,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0062",
+      "tenant": "tenant-02",
+      "amount": 82.54,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 6,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0063",
+      "tenant": "tenant-03",
+      "amount": 83.71,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 6,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0064",
+      "tenant": "tenant-04",
+      "amount": 84.88,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 6,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0065",
+      "tenant": "tenant-05",
+      "amount": 86.05,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 6,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0066",
+      "tenant": "tenant-06",
+      "amount": 87.22,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 6,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0067",
+      "tenant": "tenant-07",
+      "amount": 88.39,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 6,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0068",
+      "tenant": "tenant-08",
+      "amount": 89.56,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 6,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0069",
+      "tenant": "tenant-09",
+      "amount": 90.73,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 6,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0070",
+      "tenant": "tenant-10",
+      "amount": 91.9,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 7,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0071",
+      "tenant": "tenant-11",
+      "amount": 93.07,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 7,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0072",
+      "tenant": "tenant-00",
+      "amount": 94.24,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 7,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0073",
+      "tenant": "tenant-01",
+      "amount": 95.41,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 7,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0074",
+      "tenant": "tenant-02",
+      "amount": 96.58,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 7,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0075",
+      "tenant": "tenant-03",
+      "amount": 97.75,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 7,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0076",
+      "tenant": "tenant-04",
+      "amount": 98.92,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 7,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0077",
+      "tenant": "tenant-05",
+      "amount": 100.09,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 7,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0078",
+      "tenant": "tenant-06",
+      "amount": 101.26,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 7,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0079",
+      "tenant": "tenant-07",
+      "amount": 102.43,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 7,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0080",
+      "tenant": "tenant-08",
+      "amount": 103.6,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 8,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0081",
+      "tenant": "tenant-09",
+      "amount": 104.77,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 8,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0082",
+      "tenant": "tenant-10",
+      "amount": 105.94,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 8,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0083",
+      "tenant": "tenant-11",
+      "amount": 107.11,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 8,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0084",
+      "tenant": "tenant-00",
+      "amount": 108.28,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 8,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0085",
+      "tenant": "tenant-01",
+      "amount": 109.45,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 8,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0086",
+      "tenant": "tenant-02",
+      "amount": 110.62,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 8,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0087",
+      "tenant": "tenant-03",
+      "amount": 111.79,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 8,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0088",
+      "tenant": "tenant-04",
+      "amount": 112.96,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 8,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0089",
+      "tenant": "tenant-05",
+      "amount": 114.13,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 8,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0090",
+      "tenant": "tenant-06",
+      "amount": 115.3,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 9,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0091",
+      "tenant": "tenant-07",
+      "amount": 116.47,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 9,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0092",
+      "tenant": "tenant-08",
+      "amount": 117.64,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 9,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0093",
+      "tenant": "tenant-09",
+      "amount": 118.81,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 9,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0094",
+      "tenant": "tenant-10",
+      "amount": 119.98,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 9,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0095",
+      "tenant": "tenant-11",
+      "amount": 121.15,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 9,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0096",
+      "tenant": "tenant-00",
+      "amount": 122.32,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 9,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0097",
+      "tenant": "tenant-01",
+      "amount": 123.49,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 9,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0098",
+      "tenant": "tenant-02",
+      "amount": 124.66,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 9,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0099",
+      "tenant": "tenant-03",
+      "amount": 125.83,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 9,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0100",
+      "tenant": "tenant-04",
+      "amount": 127.0,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 10,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0101",
+      "tenant": "tenant-05",
+      "amount": 128.17,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 10,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0102",
+      "tenant": "tenant-06",
+      "amount": 129.34,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 10,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0103",
+      "tenant": "tenant-07",
+      "amount": 130.51,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 10,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0104",
+      "tenant": "tenant-08",
+      "amount": 131.68,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 10,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0105",
+      "tenant": "tenant-09",
+      "amount": 132.85,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 10,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0106",
+      "tenant": "tenant-10",
+      "amount": 134.02,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 10,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0107",
+      "tenant": "tenant-11",
+      "amount": 135.19,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 10,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0108",
+      "tenant": "tenant-00",
+      "amount": 136.36,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 10,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0109",
+      "tenant": "tenant-01",
+      "amount": 137.53,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 10,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0110",
+      "tenant": "tenant-02",
+      "amount": 138.7,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 11,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0111",
+      "tenant": "tenant-03",
+      "amount": 139.87,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 11,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0112",
+      "tenant": "tenant-04",
+      "amount": 141.04,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 11,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0113",
+      "tenant": "tenant-05",
+      "amount": 142.21,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 11,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0114",
+      "tenant": "tenant-06",
+      "amount": 143.38,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 11,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0115",
+      "tenant": "tenant-07",
+      "amount": 144.55,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 11,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0116",
+      "tenant": "tenant-08",
+      "amount": 145.72,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 11,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0117",
+      "tenant": "tenant-09",
+      "amount": 146.89,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 11,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0118",
+      "tenant": "tenant-10",
+      "amount": 148.06,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 11,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0119",
+      "tenant": "tenant-11",
+      "amount": 149.23,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 11,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0120",
+      "tenant": "tenant-00",
+      "amount": 150.4,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 12,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "CRITICAL-771",
+      "tenant": "tenant-01",
+      "amount": 9917.42,
+      "status": "blocked",
+      "policy": "never_delete",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 12,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0122",
+      "tenant": "tenant-02",
+      "amount": 152.74,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 12,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0123",
+      "tenant": "tenant-03",
+      "amount": 153.91,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 12,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0124",
+      "tenant": "tenant-04",
+      "amount": 155.08,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 12,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0125",
+      "tenant": "tenant-05",
+      "amount": 156.25,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 12,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0126",
+      "tenant": "tenant-06",
+      "amount": 157.42,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 12,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0127",
+      "tenant": "tenant-07",
+      "amount": 158.59,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 12,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0128",
+      "tenant": "tenant-08",
+      "amount": 159.76,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 12,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0129",
+      "tenant": "tenant-09",
+      "amount": 160.93,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 12,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0130",
+      "tenant": "tenant-10",
+      "amount": 162.1,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 13,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0131",
+      "tenant": "tenant-11",
+      "amount": 163.27,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 13,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0132",
+      "tenant": "tenant-00",
+      "amount": 164.44,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 13,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0133",
+      "tenant": "tenant-01",
+      "amount": 165.61,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 13,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0134",
+      "tenant": "tenant-02",
+      "amount": 166.78,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 13,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0135",
+      "tenant": "tenant-03",
+      "amount": 167.95,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 13,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0136",
+      "tenant": "tenant-04",
+      "amount": 169.12,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 13,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0137",
+      "tenant": "tenant-05",
+      "amount": 170.29,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 13,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0138",
+      "tenant": "tenant-06",
+      "amount": 171.46,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 13,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0139",
+      "tenant": "tenant-07",
+      "amount": 172.63,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 13,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0140",
+      "tenant": "tenant-08",
+      "amount": 173.8,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 14,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0141",
+      "tenant": "tenant-09",
+      "amount": 174.97,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 14,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0142",
+      "tenant": "tenant-10",
+      "amount": 176.14,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 14,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0143",
+      "tenant": "tenant-11",
+      "amount": 177.31,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 14,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0144",
+      "tenant": "tenant-00",
+      "amount": 178.48,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 14,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0145",
+      "tenant": "tenant-01",
+      "amount": 179.65,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 14,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0146",
+      "tenant": "tenant-02",
+      "amount": 180.82,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 14,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0147",
+      "tenant": "tenant-03",
+      "amount": 181.99,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 14,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0148",
+      "tenant": "tenant-04",
+      "amount": 183.16,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 14,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0149",
+      "tenant": "tenant-05",
+      "amount": 184.33,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 14,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0150",
+      "tenant": "tenant-06",
+      "amount": 185.5,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 15,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0151",
+      "tenant": "tenant-07",
+      "amount": 186.67,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 15,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0152",
+      "tenant": "tenant-08",
+      "amount": 187.84,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 15,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0153",
+      "tenant": "tenant-09",
+      "amount": 189.01,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 15,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0154",
+      "tenant": "tenant-10",
+      "amount": 190.18,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 15,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0155",
+      "tenant": "tenant-11",
+      "amount": 191.35,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 15,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0156",
+      "tenant": "tenant-00",
+      "amount": 192.52,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 15,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0157",
+      "tenant": "tenant-01",
+      "amount": 193.69,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 15,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0158",
+      "tenant": "tenant-02",
+      "amount": 194.86,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 15,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    },
+    {
+      "record_id": "rec-0159",
+      "tenant": "tenant-03",
+      "amount": 196.03,
+      "status": "normal",
+      "policy": "archive_after_30_days",
+      "region": "eu-central-1",
+      "metadata": {
+        "batch": 15,
+        "retry": 0,
+        "source": "ledger-v3"
+      }
+    }
+  ]
+}
