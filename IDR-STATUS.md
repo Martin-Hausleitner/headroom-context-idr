@@ -17,7 +17,7 @@ Alle zehn Hauptreports erfüllen F1 auf dem jeweiligen GitHub-Default-Branch: Pf
 
 ## Abschlussbeweise
 
-1. **Default-Branches 10/10:** Der jeweilige Default-Branch zeigt exakt auf den gelisteten Commit; `gh api repos/Martin-Hausleitner/<repo>/contents/<report>` liefert die gelistete Größe.
+1. **Default-Branches 10/10:** Der jeweilige Default-Branch enthält exakt die gelistete Reportfassung; `gh api repos/Martin-Hausleitner/<repo>/contents/<report>` liefert dieselbe Blob-SHA und die gelistete Größe.
 2. **NotebookLM 8/8:** Alle acht eindeutigen UUIDs wurden mit `nlm notebook get` im eingeloggten Konto abgerufen; gemeinsam genutzte Paperclip-Reports verwenden dasselbe echte Evidenz-Notebook.
 3. **Bewertung 10/10:** Rubrikgewichte ergeben je Report exakt 100; sämtliche 51 Kandidatenzeilen summieren sich korrekt zum ausgewiesenen Gesamtwert.
 4. **Gewinner 10/10:** Jeder Hauptreport enthält exakt ein `👑`-Symbol.
