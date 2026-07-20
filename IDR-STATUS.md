@@ -1,6 +1,6 @@
-# IDR-Finisher Status — 20. Juli 2026, 18:25 CEST
+# IDR-Finisher Status — 20. Juli 2026, 19:00 CEST
 
-Alle zehn Hauptreports erfüllen F1 auf dem jeweiligen GitHub-Default-Branch: Pflichtkopf, echtes NotebookLM-Notebook, mindestens 20 GitHub-Kandidaten mit Lizenz- und Star-Snapshot, nachrechenbare 100-Punkte-Wertung, genau ein 👑 Gewinner, Empfehlung und Mermaid-Diagramm. Die Links unten sind unveränderlich an den jeweils neuesten Remote-Commit der Report-Datei gebunden.
+Alle zehn Hauptreports erfüllen F1 auf dem jeweiligen GitHub-Default-Branch: Pflichtkopf, echtes NotebookLM-Notebook, mindestens 20 GitHub-Kandidaten mit Lizenz- und Star-Snapshot, nachrechenbare 100-Punkte-Wertung, genau ein 👑 Gewinner, Empfehlung und ein sinnvolles Mermaid- oder Textdiagramm. Die Links unten sind unveränderlich an den jeweils neuesten Remote-Commit der Report-Datei gebunden.
 
 | Repo | Report-Datei | 👑? | Blob-URL | ✅ fertig / 🟠 offen |
 |---|---|---|---|---|
@@ -10,9 +10,9 @@ Alle zehn Hauptreports erfüllen F1 auf dem jeweiligen GitHub-Default-Branch: Pf
 | subs-value-report | `subs-value-report.md` | 👑 Claude Code – Max 20x · 93/100 | [b9f1ea41](https://github.com/Martin-Hausleitner/subs-value-report/blob/b9f1ea41a582ce925cad768b4cf2ad527ee7df15/subs-value-report.md) | ✅ fertig · 20 Kandidaten · 33.206 Bytes |
 | recording-shield-report | `recording-shield-report.md` | 👑 Electron · 94/100 | [45d0c853](https://github.com/Martin-Hausleitner/recording-shield-report/blob/45d0c85388b8a2e593ebee4f58f9622cf8e5be87/recording-shield-report.md) | ✅ fertig · 20 Kandidaten · 52.024 Bytes |
 | paperclip-prio-report | `paperclip-priority-system.md` | 👑 Paperclip + Priority-Plugin · 94/100 | [45b5e634](https://github.com/Martin-Hausleitner/paperclip-prio-report/blob/45b5e634c768a587b59ef5b21814b1dd911eb88d/paperclip-priority-system.md) | ✅ fertig · 20 Kandidaten · 42.623 Bytes |
-| paperclip-pr-match | `paperclip-pr-match.md` | 👑 Skills-Library: My Skills und Ordner #9633 · 93/100 | [064d23e4](https://github.com/Martin-Hausleitner/paperclip-pr-match/blob/064d23e4680cae25c3769f1ec34ce0dd6a763877/paperclip-pr-match.md) | ✅ fertig · 22 Kandidaten · 73.239 Bytes |
-| homeserver-report | `homeserver-report.md` | 👑 Docker Compose + Tailscale · 93/100 | [23aece00](https://github.com/Martin-Hausleitner/homeserver-report/blob/23aece00d0f083e37e3db62d1805426319e95b64/homeserver-report.md) | ✅ fertig · 20 Kandidaten · 37.263 Bytes |
-| paperclip-architecture | `paperclip-architecture.md` | 👑 Paperclip · 96/100 | [849d6aff](https://github.com/Martin-Hausleitner/paperclip-architecture/blob/849d6affbab4d8c4a0f2c92d60a6db07e76daa85/paperclip-architecture.md) | ✅ fertig · 20 Kandidaten · 40.266 Bytes |
+| paperclip-pr-match | `paperclip-pr-match.md` | 👑 Skills-Library: My Skills und Ordner #9633 · 93/100 | [ec3aad08](https://github.com/Martin-Hausleitner/paperclip-pr-match/blob/ec3aad08ea37f201cad4e86ac7948572babc6bf7/paperclip-pr-match.md) | ✅ fertig · 22 Kandidaten · 74.032 Bytes |
+| homeserver-report | `homeserver-report.md` | 👑 Docker Compose + Tailscale · 93/100 | [ac774834](https://github.com/Martin-Hausleitner/homeserver-report/blob/ac7748342b479af66a2f80f889972f5688b5ae21/homeserver-report.md) | ✅ fertig · 20 Kandidaten · 38.197 Bytes |
+| paperclip-architecture | `paperclip-architecture.md` | 👑 Paperclip · 96/100 | [ef1a89d0](https://github.com/Martin-Hausleitner/paperclip-architecture/blob/ef1a89d0d7184300401cf2edc681a45bfdbfeaa6/paperclip-architecture.md) | ✅ fertig · 20 Kandidaten · 41.256 Bytes |
 | unbrowse-market-skills | `unbrowse-market-skills.md` | 👑 Unbrowse Market Skills · 89/100 | [5fef0697](https://github.com/Martin-Hausleitner/unbrowse-market-skills/blob/5fef069719015bc0dd7171da70838b2d240cb7fb/unbrowse-market-skills.md) | ✅ fertig · 20 Kandidaten · 19.569 Bytes |
 
 ## Abschlussbeweise
@@ -20,10 +20,10 @@ Alle zehn Hauptreports erfüllen F1 auf dem jeweiligen GitHub-Default-Branch: Pf
 1. **Default-Branches 10/10:** Die GitHub-Contents-API liefert alle zehn Reports; Größe und Blob-SHA wurden aus dem vollständig decodierten Remote-Inhalt geprüft.
 2. **NotebookLM 8/8:** Alle acht eindeutigen UUIDs wurden mit `nlm notebook get` im eingeloggten Konto abgerufen. Gemeinsam genutzte Paperclip-Reports verwenden dasselbe echte Evidenz-Notebook.
 3. **Bewertung 202/202:** Alle 202 Kandidatenzeilen summieren ihre Kriterien korrekt zum ausgewiesenen Gesamtwert; jede Rubrik ist auf 100 Punkte normiert.
-4. **GitHub-Metadaten 205/205:** 205 Star-Angaben über 171 eindeutige GitHub-Repositories wurden live gegen die GitHub-API geprüft; kombinierte Stacks wurden komponentenweise validiert.
+4. **GitHub-Metadaten:** Alle 171 eindeutigen GitHub-Repositories wurden am 20.07.2026 erneut live und fehlerfrei über die GitHub-API aufgelöst. Die in den Reports genannten Stars bleiben wahrheitsgemäße, ausdrücklich zeitgestempelte Snapshots; aktive Repositories können danach bereits neue Sterne erhalten haben.
 5. **Gewinner 10/10:** Jeder Remote-Hauptreport enthält exakt ein `👑`-Symbol.
 6. **Secret-Gate 10/10:** `gitleaks` meldet in keinem finalen Remote-Report einen Fund.
-7. **Rendering und QA:** Pflichtkopf, Notebook-Zeile, Tabellenstruktur, Empfehlung und Mermaid-Fence wurden remote geprüft; die projektspezifischen Test-, Privacy- und Rendering-Gates der Finisher-Lanes sind grün.
+7. **Rendering und QA:** Pflichtkopf, Notebook-Zeile, Tabellenstruktur, Empfehlung sowie Mermaid- beziehungsweise Textdiagramm wurden remote geprüft; die projektspezifischen Test-, Privacy- und Rendering-Gates der Finisher-Lanes sind grün.
 8. **PR-Beweis:** Paperclip-PR-Match löst 141/141 verlinkte Pull Requests live auf: 34 gemergt, 106 offen, 1 geschlossen und ungemergt.
 
 ## Remote-Sonderfälle
@@ -32,7 +32,7 @@ Alle zehn Hauptreports erfüllen F1 auf dem jeweiligen GitHub-Default-Branch: Pf
 - `homeserver-report` zeigt auf `Martin-Hausleitner/homeserver-report`; es besteht kein `servas-ai`-Remote.
 - `subs-value-report` wurde auf `main` und den tatsächlichen Default-Branch `master` zum selben F1-Commit `b9f1ea41` fast-forward synchronisiert.
 - `unbrowse-market-skills` wurde aus einem isolierten, sauberen `origin/main`-Worktree veröffentlicht; der bestehende lokale Dirty-Worktree blieb unangetastet.
-- `paperclip-pr-match` besitzt nach dem verifizierten Push neuere fremde lokale Änderungen. Diese wurden nicht überschrieben; der Abschlussbeweis bezieht sich auf den grünen Remote-Commit `064d23e4`.
+- `paperclip-pr-match` besitzt nach dem ursprünglichen Report-Push zusätzliche verifizierte Remote-Evidenz. Die Statuszeile verweist deshalb auf den neuesten report-spezifischen Remote-Commit `ec3aad08`.
 
 ## Bewusst unangetastete lokale Änderungen
 
