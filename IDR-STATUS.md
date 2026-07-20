@@ -4,7 +4,7 @@ Alle zehn Hauptreports erfüllen den lokalen F1-Gate: exakter Codex-Kopf, echte 
 
 | Repo | Report-Datei | 👑? | Blob-URL | Status |
 |---|---|---:|---|---|
-| headroom-context-idr | headroom-context-report.md | Ja, genau 1 | [0c3c058](https://github.com/Martin-Hausleitner/headroom-context-idr/blob/0c3c0582fc148b558d78390c3aded36e3aafe73b/headroom-context-report.md) | ✅ fertig · 26.479 Bytes |
+| headroom-context-idr | headroom-context-report.md | Ja, genau 1 | [275e6fd](https://github.com/Martin-Hausleitner/headroom-context-idr/blob/275e6fd1bbfeb1599fa255845b6a28a39ce68163/headroom-context-report.md) | ✅ fertig · 26.517 Bytes |
 | secrets-idr-report | agentic-secrets-report.md | Ja, genau 1 | [4da069c](https://github.com/Martin-Hausleitner/secrets-idr-report/blob/4da069ce7541142af173b148cda7d27fe1d0703d/agentic-secrets-report.md) | ✅ fertig · 44.004 Bytes |
 | web-archive-report | web-archive-report.md | Ja, genau 1 | [0867aeb](https://github.com/Martin-Hausleitner/web-archive-report/blob/0867aeb034b095d585542413a6246d8cc4b59259/web-archive-report.md) | ✅ fertig · 32.262 Bytes |
 | subs-value-report | subs-value-report.md | Ja, genau 1 | [c8174b6](https://github.com/Martin-Hausleitner/subs-value-report/blob/c8174b65a476a740dfdd0c6484b538a472144abb/subs-value-report.md) | ✅ fertig · 30.371 Bytes |
