@@ -1,4 +1,4 @@
-[ L50 · R350 ] 🟣 Codex · gpt-5.6-sol · 🧠 IDR: ja · 🕐 2026-07-20 17:21 CEST
+[ L50 · R350 ] 🟣 Codex · gpt-5.6-sol · 🧠 IDR: ja · 🕐 2026-07-20 17:55 CEST
 > 🧠 NotebookLM: https://notebooklm.google.com/notebook/4cbe42bf-f9ec-4c8b-8b6c-e6501f50478b
 
 # IDR: Headroom Prompt-Enhance/Compact
@@ -16,14 +16,14 @@ Headroom bleibt die beste Gesamtplattform für Policy, Routing und Messung; Komp
 
 ## F1-Abschlussmatrix: Toolauswahl und 100-Punkte-Wertung
 
-Gewichtung: Integration in Headroom 25, lokale/deterministische Ausführung 20, Kompressionsnutzen 20, Beobachtbarkeit und Reversibilität 20, Wartung/Reife 15 = **100 Punkte**. Stars und SPDX-Lizenzstatus wurden am 20.07.2026 um 17:21 CEST live über die GitHub-Repository-API erhoben; NOASSERTION wird als [UNVERIFIZIERT] markiert und ist keine verifizierte Lizenz.
+Gewichtung: Integration in Headroom 25, lokale/deterministische Ausführung 20, Kompressionsnutzen 20, Beobachtbarkeit und Reversibilität 20, Wartung/Reife 15 = **100 Punkte**. Stars und SPDX-Lizenzstatus wurden am 20.07.2026 um 17:55 CEST live über die GitHub-Repository-API erhoben; NOASSERTION wird als [UNVERIFIZIERT] markiert und ist keine verifizierte Lizenz.
 
 | Rang | Tool (GitHub) | Lizenz | ⭐ echte Stars | Integration /25 | Lokal /20 | Nutzen /20 | Observability /20 | Reife /15 | Gesamt /100 |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 👑 [Headroom](https://github.com/headroomlabs-ai/headroom) | Apache-2.0 | 60.621 | 25 | 18 | 18 | 20 | 13 | **94** |
-| 2 | [LLMLingua](https://github.com/microsoft/LLMLingua) | MIT | 6.453 | 18 | 17 | 20 | 15 | 14 | **84** |
+| 1 | 👑 [Headroom](https://github.com/headroomlabs-ai/headroom) | Apache-2.0 | 60.622 | 25 | 18 | 18 | 20 | 13 | **94** |
+| 2 | [LLMLingua](https://github.com/microsoft/LLMLingua) | MIT | 6.454 | 18 | 17 | 20 | 15 | 14 | **84** |
 | 3 | [Claw Compactor](https://github.com/open-compress/claw-compactor) | MIT | 2.188 | 22 | 20 | 17 | 12 | 12 | **83** |
-| 4 | [RTK](https://github.com/rtk-ai/rtk) | Apache-2.0 | 72.032 | 16 | 20 | 15 | 16 | 15 | **82** |
+| 4 | [RTK](https://github.com/rtk-ai/rtk) | Apache-2.0 | 72.038 | 16 | 20 | 15 | 16 | 15 | **82** |
 | 5 | [Selective Context](https://github.com/liyucheng09/Selective_Context) | [UNVERIFIZIERT] (NOASSERTION) | 423 | 13 | 17 | 15 | 10 | 8 | **63** |
 
 **Empfehlung:** Headroom bleibt der kanonische Policy-, Proxy- und Mess-Layer. Claw Compactor wird nur als deterministischer, rollensensitiver Kompressionsbaustein eingebunden; LLMLingua bleibt ein selektiver Pfad für lange Prosa/RAG-Kontexte. Die Krone bewertet die Gesamtplattform, nicht den isolierten Kompressionsalgorithmus.
@@ -95,27 +95,32 @@ Verwendete Awesome-Quellen:
 - [Awesome Prompt Engineering](https://github.com/promptslab/Awesome-Prompt-Engineering)
 - [Awesome LLM Inference](https://github.com/xlite-dev/Awesome-LLM-Inference)
 
-### Top 15 der post-Benchmark-Matrix
+### Top 20 der post-Benchmark-Matrix
 
 | Rang | Repository | Stars | Punkte | Einordnung |
 |---:|---|---:|---:|---|
 | 1 | [open-compress/claw-compactor](https://github.com/open-compress/claw-compactor) | 2.188 | 79,5 | externer deterministischer Sieger; Guard nötig |
-| 2 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 72.032 | 77,0 | sehr stark für CLI-Ausgaben, kein allgemeiner Prompt-Rewriter |
+| 2 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 72.038 | 77,0 | sehr stark für CLI-Ausgaben, kein allgemeiner Prompt-Rewriter |
 | 3 | [run-llama/llama_index](https://github.com/run-llama/llama_index) | 50.962 | 76,0 | RAG-Postprocessing und LongLLMLingua-Adapter |
 | 4 | [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | 25.954 | 75,5 | produktionsreife RAG-Pipeline |
-| 5 | [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 142.166 | 75,0 | ContextualCompressionRetriever |
-| 6 | [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) | 21.040 | 74,5 | Gateway mit gestapelter Kompression |
-| 7 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | 91.094 | 71,0 | aggressive Sprachverkürzung, Präzisionsrisiko |
+| 5 | [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 142.168 | 75,0 | ContextualCompressionRetriever |
+| 6 | [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) | 21.105 | 74,5 | Gateway mit gestapelter Kompression |
+| 7 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | 91.104 | 71,0 | aggressive Sprachverkürzung, Präzisionsrisiko |
 | 8 | [wilpel/caveman-compression](https://github.com/wilpel/caveman-compression) | 1.062 | 70,5 | modellfreie semantische Kurzschrift |
 | 9 | [FlagOpen/FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding) | 11.955 | 70,5 | starke Retrieval-/Reranking-Bausteine |
 | 10 | [AnswerDotAI/rerankers](https://github.com/AnswerDotAI/rerankers) | 1.624 | 69,5 | einfache extraktive Kontextselektion |
 | 11 | [huggingface/sentence-transformers](https://github.com/huggingface/sentence-transformers) | 18.923 | 69,5 | Embedding-Baustein, benötigt eigene Policy |
 | 12 | [microsoft/promptflow](https://github.com/microsoft/promptflow) | 11.185 | 68,5 | Workflow und LLMLingua-Integration |
-| 13 | [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | 121.038 | 68,0 | lokaler Billigmodell-Host, kein Compressor |
+| 13 | [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | 121.042 | 68,0 | lokaler Billigmodell-Host, kein Compressor |
 | 14 | [liyucheng09/Selective_Context](https://github.com/liyucheng09/Selective_Context) | 423 | 65,5 | self-information pruning |
 | 15 | [carriex/recomp](https://github.com/carriex/recomp) | 148 | 65,5 | RAG-extraktiv/abstraktiv, selektive Augmentation |
+| 16 | [3DAgentWorld/Toolkit-for-Prompt-Compression](https://github.com/3DAgentWorld/Toolkit-for-Prompt-Compression) | 291 | 65,5 | Forschungs-Toolkit zum reproduzierbaren Methodenvergleich |
+| 17 | [RUC-NLPIR/FlashRAG](https://github.com/RUC-NLPIR/FlashRAG) | 3.525 | 64,5 | RAG-Forschungs-Toolkit mit Kompressionsbausteinen |
+| 18 | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | 23.438 | 64,5 | Eval-/Red-Team-Gate, komprimiert nicht selbst |
+| 19 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 86.710 | 62,0 | Serving-/KV-Layer, spart keine übertragenen API-Tokens |
+| 20 | [jina-ai/late-chunking](https://github.com/jina-ai/late-chunking) | 532 | 60,0 | bessere Retrieval-Selektion, kein allgemeiner Rewriter |
 
-Stars sind ein am 20.07.2026 um 17:21 CEST live per GitHub-API erhobener Snapshot und können sich nach dem Erfassungszeitpunkt ändern. Popularität ist absichtlich nur 5/100 Punkte wert.
+Stars sind ein am 20.07.2026 um 17:55 CEST live per GitHub-API erhobener Snapshot und können sich nach dem Erfassungszeitpunkt ändern. Popularität ist absichtlich nur 5/100 Punkte wert. Alle 20 sichtbaren Kandidaten sind echte GitHub-Repositories; die vollständige Rohmatrix bewertet 50 Repositories.
 
 ## 100-Punkte-Rubrik
 
