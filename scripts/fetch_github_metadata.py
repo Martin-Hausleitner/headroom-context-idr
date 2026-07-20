@@ -137,6 +137,7 @@ def main() -> None:
         metadata.append(data)
         caps = set(filter(None, candidate["capabilities"].split("|")))
         pop = popularity(int(data["stargazers_count"]))
+        spdx_id = (data.get("license") or {}).get("spdx_id")
         dimensions = {
             key: float(candidate[key])
             for key in (
@@ -160,7 +161,7 @@ def main() -> None:
             "forks": data["forks_count"],
             "open_issues": data["open_issues_count"],
             "archived": data["archived"],
-            "license": (data.get("license") or {}).get("spdx_id") or "NOASSERTION",
+            "license": spdx_id if spdx_id and spdx_id != "NOASSERTION" else "[UNVERIFIZIERT] (NOASSERTION)",
             "last_push_utc": data["pushed_at"],
             "primary_language": data.get("language") or "unknown",
             "default_branch": data["default_branch"],
@@ -189,10 +190,11 @@ def main() -> None:
 
     winner = max(rows, key=lambda row: row["total_100"])
     winner["crown"] = "CROWN"
+    rows.sort(key=lambda row: -float(row["total_100"]))
     RAW.parent.mkdir(parents=True, exist_ok=True)
     RAW.write_text(json.dumps({"captured_at_utc": captured_at, "repositories": metadata}, indent=2), encoding="utf-8")
     with OUTPUT.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     print(json.dumps({"repositories": len(rows), "columns": len(rows[0]), "winner": winner["repository"], "winner_score": winner["total_100"], "captured_at_utc": captured_at}))

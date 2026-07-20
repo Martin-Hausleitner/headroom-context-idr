@@ -1,7 +1,7 @@
 {
   "verdict": "PASS",
-  "passed": 28,
-  "total": 28,
+  "passed": 33,
+  "total": 33,
   "checks": [
     {
       "name": "Reportkopf IDR: ja",
@@ -29,6 +29,11 @@
       "evidence": "genau eine empfohlene Repo-Krone"
     },
     {
+      "name": "Report mindestens 25 KiB",
+      "passed": true,
+      "evidence": "26566 Bytes"
+    },
+    {
       "name": "50 Repository-Zeilen",
       "passed": true,
       "evidence": "50"
@@ -39,9 +44,24 @@
       "evidence": "60"
     },
     {
+      "name": "GitHub, Website, Lizenz, Stars und Score je Matrixzeile",
+      "passed": true,
+      "evidence": "github_url, homepage, license, repository, stars, total_100"
+    },
+    {
+      "name": "Report und CSV gegenseitig verlinkt",
+      "passed": true,
+      "evidence": "Report → CSV → gerenderter Report"
+    },
+    {
       "name": "Genau eine Matrix-Krone",
       "passed": true,
       "evidence": "open-compress/claw-compactor"
+    },
+    {
+      "name": "Matrix nach TOTAL-SCORE sortiert",
+      "passed": true,
+      "evidence": "top=open-compress/claw-compactor (79.5)"
     },
     {
       "name": "Alle Scores summieren korrekt",
@@ -52,6 +72,11 @@
       "name": "Alle Scores in 0..100",
       "passed": true,
       "evidence": "total_100"
+    },
+    {
+      "name": "GitHub-Metadaten-Snapshot höchstens 24 Stunden alt",
+      "passed": true,
+      "evidence": "2026-07-20T15:18:47.402949+00:00"
     },
     {
       "name": "Drei lange Promptklassen",

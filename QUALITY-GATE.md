@@ -1,6 +1,6 @@
 # Quality Gate
 
-**Verdikt: PASS — 28/28 Checks bestanden.**
+**Verdikt: PASS — 33/33 Checks bestanden.**
 
 | Check | Ergebnis | Evidenz |
 |---|:---:|---|
@@ -9,11 +9,16 @@
 | Mermaid-Architektur | PASS | Zielarchitektur |
 | 100-Punkte-Rubrik | PASS | Rubriktabelle |
 | Krone im Report | PASS | genau eine empfohlene Repo-Krone |
+| Report mindestens 25 KiB | PASS | 26566 Bytes |
 | 50 Repository-Zeilen | PASS | 50 |
 | Mindestens 50 Matrixfelder | PASS | 60 |
+| GitHub, Website, Lizenz, Stars und Score je Matrixzeile | PASS | github_url, homepage, license, repository, stars, total_100 |
+| Report und CSV gegenseitig verlinkt | PASS | Report → CSV → gerenderter Report |
 | Genau eine Matrix-Krone | PASS | open-compress/claw-compactor |
+| Matrix nach TOTAL-SCORE sortiert | PASS | top=open-compress/claw-compactor (79.5) |
 | Alle Scores summieren korrekt | PASS | 50/50 |
 | Alle Scores in 0..100 | PASS | total_100 |
+| GitHub-Metadaten-Snapshot höchstens 24 Stunden alt | PASS | 2026-07-20T15:18:47.402949+00:00 |
 | Drei lange Promptklassen | PASS | code_debug, prose_rag, structured_json |
 | Zehn gemessene Methoden | PASS | 10 |
 | 30 Benchmark-Messzeilen | PASS | 30 |

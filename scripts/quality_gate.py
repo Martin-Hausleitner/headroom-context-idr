@@ -9,6 +9,7 @@ import subprocess
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
+from datetime import UTC, datetime
 from pathlib import Path
 
 
@@ -50,17 +51,48 @@ def main() -> None:
     record("Mermaid-Architektur", "```mermaid" in report and "flowchart LR" in report, "Zielarchitektur")
     record("100-Punkte-Rubrik", "**Gesamt** | **100**" in report, "Rubriktabelle")
     record("Krone im Report", report.count("👑") == 1, "genau eine empfohlene Repo-Krone")
+    record("Report mindestens 25 KiB", REPORT.stat().st_size >= 25 * 1024, f"{REPORT.stat().st_size} Bytes")
 
-    with (ROOT / "data" / "repository-matrix.csv").open(newline="", encoding="utf-8") as handle:
+    matrix_path = ROOT / "data" / "repository-matrix.csv"
+    matrix_text = matrix_path.read_text(encoding="utf-8")
+    with matrix_path.open(newline="", encoding="utf-8") as handle:
         matrix = list(csv.DictReader(handle))
     record("50 Repository-Zeilen", len(matrix) == 50, str(len(matrix)))
     record("Mindestens 50 Matrixfelder", len(matrix[0]) >= 50, str(len(matrix[0])))
+    required_matrix_fields = {"repository", "github_url", "homepage", "license", "stars", "total_100"}
+    record(
+        "GitHub, Website, Lizenz, Stars und Score je Matrixzeile",
+        required_matrix_fields <= set(matrix[0])
+        and all(row["github_url"] == f"https://github.com/{row['repository']}" for row in matrix)
+        and all(row["license"] and row["license"] != "NOASSERTION" for row in matrix)
+        and all(row["stars"].isdigit() and int(row["stars"]) >= 0 for row in matrix),
+        ", ".join(sorted(required_matrix_fields)),
+    )
+    record(
+        "Report und CSV gegenseitig verlinkt",
+        "data/repository-matrix.csv" in report and PUBLIC_BLOB_URL in matrix_text,
+        "Report → CSV → gerenderter Report",
+    )
     crowns = [row for row in matrix if row["crown"] == "CROWN"]
     record("Genau eine Matrix-Krone", len(crowns) == 1, crowns[0]["repository"] if crowns else str(len(crowns)))
+    scores = [float(row["total_100"]) for row in matrix]
+    record(
+        "Matrix nach TOTAL-SCORE sortiert",
+        scores == sorted(scores, reverse=True) and matrix[0]["crown"] == "CROWN",
+        f"top={matrix[0]['repository']} ({matrix[0]['total_100']})",
+    )
     score_fields = ["savings_20", "quality_20", "latency_10", "local_deploy_10", "model_footprint_8", "proxy_integration_12", "safety_reversibility_8", "maturity_7", "popularity_5"]
     score_sums = [abs(sum(float(row[field]) for field in score_fields) - float(row["total_100"])) < 0.01 for row in matrix]
     record("Alle Scores summieren korrekt", all(score_sums), f"{sum(score_sums)}/{len(score_sums)}")
     record("Alle Scores in 0..100", all(0 <= float(row["total_100"]) <= 100 for row in matrix), "total_100")
+    captured_values = {row["captured_at_utc"] for row in matrix}
+    captured_at = datetime.fromisoformat(next(iter(captured_values))) if len(captured_values) == 1 else None
+    capture_age = datetime.now(UTC) - captured_at if captured_at else None
+    record(
+        "GitHub-Metadaten-Snapshot höchstens 24 Stunden alt",
+        capture_age is not None and capture_age.total_seconds() <= 86_400,
+        next(iter(captured_values)) if len(captured_values) == 1 else f"{len(captured_values)} Zeitstempel",
+    )
 
     benchmark = json.loads((ROOT / "benchmarks" / "results" / "benchmark-results.json").read_text(encoding="utf-8"))
     rows = benchmark["rows"]
