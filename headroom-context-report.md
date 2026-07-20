@@ -1,4 +1,4 @@
-[ L50 · R350 ] 🟣 Codex · gpt-5.6-sol · 🧠 IDR: ja · 🕐 2026-07-20 17:55 CEST
+[ L50 · R350 ] 🟣 Codex · gpt-5.6-sol · 🧠 IDR: ja · 🕐 2026-07-20 18:06 CEST
 > 🧠 NotebookLM: https://notebooklm.google.com/notebook/4cbe42bf-f9ec-4c8b-8b6c-e6501f50478b
 
 # IDR: Headroom Prompt-Enhance/Compact
@@ -12,21 +12,36 @@
 
 ## Ergebnis in einem Satz
 
-Headroom bleibt die beste Gesamtplattform für Policy, Routing und Messung; Kompression wird darin selektiv über Claw Compactor, LLMLingua und einen streng gegateten Gemini-Shadow-Pfad eingesetzt, niemals pauschal auf jede Request.
+Headroom bleibt die Host-Plattform für Policy, Routing und Messung; im einheitlichen Vergleich der 20 externen Kandidaten gewinnt Claw Compactor, ergänzt durch LLMLingua und einen streng gegateten Gemini-Shadow-Pfad, niemals pauschal auf jede Request.
 
 ## F1-Abschlussmatrix: Toolauswahl und 100-Punkte-Wertung
 
-Gewichtung: Integration in Headroom 25, lokale/deterministische Ausführung 20, Kompressionsnutzen 20, Beobachtbarkeit und Reversibilität 20, Wartung/Reife 15 = **100 Punkte**. Stars und SPDX-Lizenzstatus wurden am 20.07.2026 um 17:55 CEST live über die GitHub-Repository-API erhoben; NOASSERTION wird als [UNVERIFIZIERT] markiert und ist keine verifizierte Lizenz.
+Die einheitliche Rubrik lautet: echte Input-Token-Savings 20, Qualität/Fidelity 20, Hot-Path-Latenz 10, lokale/billige Ausführung 10, Modell-Footprint 8, Proxy-Integration 12, Sicherheit/Reversibilität 8, Reife 7, Popularität 5 = **100 Punkte**. Jede Zelle ist der erreichte Beitrag zum Maximalgewicht; die Summe ist nachrechenbar. Stars und SPDX-Lizenzstatus wurden am 20.07.2026 um 17:55 CEST live über die GitHub-Repository-API erhoben; NOASSERTION wird als [UNVERIFIZIERT] markiert und ist keine verifizierte Lizenz.
 
-| Rang | Tool (GitHub) | Lizenz | ⭐ echte Stars | Integration /25 | Lokal /20 | Nutzen /20 | Observability /20 | Reife /15 | Gesamt /100 |
-|---:|---|---|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 👑 [Headroom](https://github.com/headroomlabs-ai/headroom) | Apache-2.0 | 60.622 | 25 | 18 | 18 | 20 | 13 | **94** |
-| 2 | [LLMLingua](https://github.com/microsoft/LLMLingua) | MIT | 6.454 | 18 | 17 | 20 | 15 | 14 | **84** |
-| 3 | [Claw Compactor](https://github.com/open-compress/claw-compactor) | MIT | 2.188 | 22 | 20 | 17 | 12 | 12 | **83** |
-| 4 | [RTK](https://github.com/rtk-ai/rtk) | Apache-2.0 | 72.038 | 16 | 20 | 15 | 16 | 15 | **82** |
-| 5 | [Selective Context](https://github.com/liyucheng09/Selective_Context) | [UNVERIFIZIERT] (NOASSERTION) | 423 | 13 | 17 | 15 | 10 | 8 | **63** |
+| Rang | Tool (GitHub) | Lizenz | ⭐ echte Stars | Savings /20 | Qualität /20 | Latenz /10 | Lokal /10 | Footprint /8 | Proxy /12 | Sicherheit /8 | Reife /7 | Popularität /5 | Gesamt /100 |
+|---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 👑 [Claw Compactor](https://github.com/open-compress/claw-compactor) | MIT | 2.188 | 17 | 13 | 8 | 10 | 8 | 10 | 5 | 5 | 3,5 | **79,5** |
+| 2 | [RTK](https://github.com/rtk-ai/rtk) | Apache-2.0 | 72.038 | 8 | 18 | 10 | 10 | 8 | 3 | 8 | 7 | 5 | **77,0** |
+| 3 | [LlamaIndex](https://github.com/run-llama/llama_index) | MIT | 50.962 | 15 | 15 | 6 | 7 | 5 | 10 | 6 | 7 | 5 | **76,0** |
+| 4 | [Haystack](https://github.com/deepset-ai/haystack) | Apache-2.0 | 25.954 | 12 | 15 | 7 | 8 | 6 | 10 | 6 | 7 | 4,5 | **75,5** |
+| 5 | [LangChain](https://github.com/langchain-ai/langchain) | MIT | 142.168 | 14 | 15 | 6 | 7 | 5 | 10 | 6 | 7 | 5 | **75,0** |
+| 6 | [OmniRoute](https://github.com/diegosouzapw/OmniRoute) | MIT | 21.105 | 14 | 11 | 8 | 9 | 7 | 11 | 5 | 5 | 4,5 | **74,5** |
+| 7 | [Caveman](https://github.com/JuliusBrussee/caveman) | MIT | 91.104 | 13 | 9 | 10 | 10 | 8 | 6 | 4 | 6 | 5 | **71,0** |
+| 8 | [Caveman Compression](https://github.com/wilpel/caveman-compression) | [UNVERIFIZIERT] (NOASSERTION) | 1.062 | 12 | 10 | 10 | 10 | 8 | 8 | 5 | 4 | 3,5 | **70,5** |
+| 9 | [FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding) | MIT | 11.955 | 12 | 17 | 6 | 7 | 4 | 7 | 6 | 7 | 4,5 | **70,5** |
+| 10 | [rerankers](https://github.com/AnswerDotAI/rerankers) | Apache-2.0 | 1.624 | 10 | 15 | 7 | 8 | 6 | 8 | 6 | 6 | 3,5 | **69,5** |
+| 11 | [Sentence Transformers](https://github.com/huggingface/sentence-transformers) | Apache-2.0 | 18.923 | 10 | 14 | 7 | 8 | 6 | 7 | 6 | 7 | 4,5 | **69,5** |
+| 12 | [Promptflow](https://github.com/microsoft/promptflow) | MIT | 11.185 | 10 | 16 | 5 | 6 | 4 | 10 | 6 | 7 | 4,5 | **68,5** |
+| 13 | [llama.cpp](https://github.com/ggml-org/llama.cpp) | MIT | 121.042 | 0 | 17 | 8 | 9 | 7 | 7 | 8 | 7 | 5 | **68,0** |
+| 14 | [Selective Context](https://github.com/liyucheng09/Selective_Context) | [UNVERIFIZIERT] (NOASSERTION) | 423 | 14 | 13 | 7 | 8 | 6 | 7 | 4 | 4 | 2,5 | **65,5** |
+| 15 | [RECOMP](https://github.com/carriex/recomp) | MIT | 148 | 15 | 16 | 5 | 6 | 4 | 7 | 5 | 5 | 2,5 | **65,5** |
+| 16 | [Toolkit for Prompt Compression](https://github.com/3DAgentWorld/Toolkit-for-Prompt-Compression) | MIT | 291 | 16 | 14 | 5 | 7 | 4 | 8 | 4 | 5 | 2,5 | **65,5** |
+| 17 | [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG) | MIT | 3.525 | 13 | 15 | 5 | 6 | 4 | 7 | 5 | 6 | 3,5 | **64,5** |
+| 18 | [Promptfoo](https://github.com/promptfoo/promptfoo) | MIT | 23.438 | 0 | 17 | 5 | 9 | 8 | 6 | 8 | 7 | 4,5 | **64,5** |
+| 19 | [vLLM](https://github.com/vllm-project/vllm) | Apache-2.0 | 86.710 | 0 | 18 | 9 | 5 | 2 | 8 | 8 | 7 | 5 | **62,0** |
+| 20 | [Late Chunking](https://github.com/jina-ai/late-chunking) | Apache-2.0 | 532 | 9 | 16 | 5 | 6 | 4 | 6 | 6 | 5 | 3 | **60,0** |
 
-**Empfehlung:** Headroom bleibt der kanonische Policy-, Proxy- und Mess-Layer. Claw Compactor wird nur als deterministischer, rollensensitiver Kompressionsbaustein eingebunden; LLMLingua bleibt ein selektiver Pfad für lange Prosa/RAG-Kontexte. Die Krone bewertet die Gesamtplattform, nicht den isolierten Kompressionsalgorithmus.
+**Empfehlung:** Headroom bleibt der kanonische Policy-, Proxy- und Mess-Layer. Der gekrönte Claw Compactor wird nur als deterministischer, rollensensitiver Kompressionsbaustein eingebunden; LLMLingua bleibt ein selektiver Pfad für lange Prosa/RAG-Kontexte. Headroom selbst ist die zu erweiternde Host-Plattform und deshalb kein Kandidat in dieser externen Toolwertung.
 
 Nicht jede Prompt sollte von einer billigen KI umgeschrieben werden: Jede Request soll durch eine billige **Policy-Entscheidung** laufen, aber System-/Developer-Nachrichten, Tool-Schemas, Code und strukturiertes JSON bleiben standardmäßig unangetastet; für die deterministische Stufe gewinnt **[Claw Compactor](https://github.com/open-compress/claw-compactor)** mit 79,5/100, und für seltene, sehr lange, redundante Prosa/RAG-Prompts ist **agy Gemini 3.5 Flash Low** die beste gemessene semantische Zwischen-KI.
 
