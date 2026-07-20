@@ -1,6 +1,8 @@
-# IDR: ja — Headroom Prompt-Enhance/Compact
+[ L50 · R350 ] 🟣 Codex · gpt-5.6-sol · 🧠 IDR: ja · 🕐 2026-07-20 12:00 CEST
+> 🧠 NotebookLM: https://notebooklm.google.com/notebook/4cbe42bf-f9ec-4c8b-8b6c-e6501f50478b
 
-**NotebookLM:** [Headroom Prompt Compression IDR 2026-07-17](https://notebooklm.google.com/notebook/4cbe42bf-f9ec-4c8b-8b6c-e6501f50478b)  
+# IDR: Headroom Prompt-Enhance/Compact
+
 **Notebook:** 40 verarbeitete Primär-/Kuratorquellen, 5 gespeicherte Cross-Queries  
 **Stand:** 2026-07-18, Europe/Berlin  
 **Zielsystem:** Headroom 0.31.0 auf `127.0.0.1:8787`  
@@ -10,7 +12,21 @@
 
 ## Ergebnis in einem Satz
 
-Nicht jede Prompt sollte von einer billigen KI umgeschrieben werden: Jede Request soll durch eine billige **Policy-Entscheidung** laufen, aber System-/Developer-Nachrichten, Tool-Schemas, Code und strukturiertes JSON bleiben standardmäßig unangetastet; für die deterministische Stufe gewinnt 👑 **[Claw Compactor](https://github.com/open-compress/claw-compactor)** mit 79,5/100, und für seltene, sehr lange, redundante Prosa/RAG-Prompts ist **agy Gemini 3.5 Flash Low** die beste gemessene semantische Zwischen-KI.
+## F1-Abschlussmatrix: Toolauswahl und 100-Punkte-Wertung
+
+Gewichtung: Integration in Headroom 25, lokale/deterministische Ausführung 20, Kompressionsnutzen 20, Beobachtbarkeit und Reversibilität 20, Wartung/Reife 15 = **100 Punkte**. Stars und SPDX-Lizenzstatus wurden am 20.07.2026 über die GitHub-Repository-API erhoben; NOASSERTION ist keine verifizierte Lizenz.
+
+| Rang | Tool (GitHub) | Lizenz | ⭐ echte Stars | Integration /25 | Lokal /20 | Nutzen /20 | Observability /20 | Reife /15 | Gesamt /100 |
+|---:|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 1 | 👑 [Headroom](https://github.com/headroomlabs-ai/headroom) | Apache-2.0 | 60.530 | 25 | 18 | 18 | 20 | 13 | **94** |
+| 2 | [LLMLingua](https://github.com/microsoft/LLMLingua) | MIT | 6.452 | 18 | 17 | 20 | 15 | 14 | **84** |
+| 3 | [Claw Compactor](https://github.com/open-compress/claw-compactor) | MIT | 2.188 | 22 | 20 | 17 | 12 | 12 | **83** |
+| 4 | [RTK](https://github.com/rtk-ai/rtk) | Apache-2.0 | 71.960 | 16 | 20 | 15 | 16 | 15 | **82** |
+| 5 | [Selective Context](https://github.com/liyucheng09/Selective_Context) | [UNVERIFIZIERT] (NOASSERTION) | 423 | 13 | 17 | 15 | 10 | 8 | **63** |
+
+**Empfehlung:** Headroom bleibt der kanonische Policy-, Proxy- und Mess-Layer. Claw Compactor wird nur als deterministischer, rollensensitiver Kompressionsbaustein eingebunden; LLMLingua bleibt ein selektiver Pfad für lange Prosa/RAG-Kontexte. Die Krone bewertet die Gesamtplattform, nicht den isolierten Kompressionsalgorithmus.
+
+Nicht jede Prompt sollte von einer billigen KI umgeschrieben werden: Jede Request soll durch eine billige **Policy-Entscheidung** laufen, aber System-/Developer-Nachrichten, Tool-Schemas, Code und strukturiertes JSON bleiben standardmäßig unangetastet; für die deterministische Stufe gewinnt **[Claw Compactor](https://github.com/open-compress/claw-compactor)** mit 79,5/100, und für seltene, sehr lange, redundante Prosa/RAG-Prompts ist **agy Gemini 3.5 Flash Low** die beste gemessene semantische Zwischen-KI.
 
 ## Klare Empfehlung
 
@@ -81,7 +97,7 @@ Verwendete Awesome-Quellen:
 
 | Rang | Repository | Stars | Punkte | Einordnung |
 |---:|---|---:|---:|---|
-| 1 | 👑 [open-compress/claw-compactor](https://github.com/open-compress/claw-compactor) | 2.187 | 79,5 | externer deterministischer Sieger; Guard nötig |
+| 1 | [open-compress/claw-compactor](https://github.com/open-compress/claw-compactor) | 2.188 | 79,5 | externer deterministischer Sieger; Guard nötig |
 | 2 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 71.648 | 77,0 | sehr stark für CLI-Ausgaben, kein allgemeiner Prompt-Rewriter |
 | 3 | [run-llama/llama_index](https://github.com/run-llama/llama_index) | 50.925 | 76,0 | RAG-Postprocessing und LongLLMLingua-Adapter |
 | 4 | [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | 25.933 | 75,5 | produktionsreife RAG-Pipeline |
@@ -334,7 +350,7 @@ Ohne diese Daten ist `bypass` die korrekte Entscheidung.
 
 ## Schlussentscheidung
 
-**👑 Compression-Repo:** Claw Compactor, weil es im Vergleich die beste Kombination aus echter Tokenreduktion, lokaler Ausführung, Strukturstufen, Rewind-Konzept und Proxy-Nähe bietet. Es ist kein sicherer Drop-in: Systemrollen und sensible strukturierte Werte müssen von Headroom geschützt werden, und `Nexus`/`Abbrev` dürfen nicht pauschal laufen.
+**Compression-Repo:** Claw Compactor, weil es im Vergleich die beste Kombination aus echter Tokenreduktion, lokaler Ausführung, Strukturstufen, Rewind-Konzept und Proxy-Nähe bietet. Es ist kein sicherer Drop-in: Systemrollen und sensible strukturierte Werte müssen von Headroom geschützt werden, und `Nexus`/`Abbrev` dürfen nicht pauschal laufen.
 
 **Billige Zwischen-KI:** agy Gemini 3.5 Flash Low, aber nur als seltene gated Semantic-Compaction-Stufe für sehr lange, redundante Prosa/RAG-Payloads. Der reale Test war qualitativ stark und extrem kompakt, aber zu langsam und zu risikoreich für jede Prompt.
 
