@@ -16,7 +16,7 @@ Headroom bleibt die beste Gesamtplattform für Policy, Routing und Messung; Komp
 
 ## F1-Abschlussmatrix: Toolauswahl und 100-Punkte-Wertung
 
-Gewichtung: Integration in Headroom 25, lokale/deterministische Ausführung 20, Kompressionsnutzen 20, Beobachtbarkeit und Reversibilität 20, Wartung/Reife 15 = **100 Punkte**. Stars und SPDX-Lizenzstatus wurden am 20.07.2026 um 13:10 CEST über die GitHub-Repository-API erhoben; NOASSERTION ist keine verifizierte Lizenz.
+Gewichtung: Integration in Headroom 25, lokale/deterministische Ausführung 20, Kompressionsnutzen 20, Beobachtbarkeit und Reversibilität 20, Wartung/Reife 15 = **100 Punkte**. Stars und SPDX-Lizenzstatus wurden am 20.07.2026 um 13:10 CEST über die GitHub-Repository-API erhoben; NOASSERTION wird als [UNVERIFIZIERT] markiert und ist keine verifizierte Lizenz.
 
 | Rang | Tool (GitHub) | Lizenz | ⭐ echte Stars | Integration /25 | Lokal /20 | Nutzen /20 | Observability /20 | Reife /15 | Gesamt /100 |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|
