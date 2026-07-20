@@ -1,4 +1,4 @@
-[ L50 · R350 ] 🟣 Codex · gpt-5.6-sol · 🧠 IDR: ja · 🕐 2026-07-20 17:16 CEST
+[ L50 · R350 ] 🟣 Codex · gpt-5.6-sol · 🧠 IDR: ja · 🕐 2026-07-20 17:21 CEST
 > 🧠 NotebookLM: https://notebooklm.google.com/notebook/4cbe42bf-f9ec-4c8b-8b6c-e6501f50478b
 
 # IDR: Headroom Prompt-Enhance/Compact
@@ -16,7 +16,7 @@ Headroom bleibt die beste Gesamtplattform für Policy, Routing und Messung; Komp
 
 ## F1-Abschlussmatrix: Toolauswahl und 100-Punkte-Wertung
 
-Gewichtung: Integration in Headroom 25, lokale/deterministische Ausführung 20, Kompressionsnutzen 20, Beobachtbarkeit und Reversibilität 20, Wartung/Reife 15 = **100 Punkte**. Stars und SPDX-Lizenzstatus wurden am 20.07.2026 um 17:16 CEST live über die GitHub-Repository-API erhoben; NOASSERTION wird als [UNVERIFIZIERT] markiert und ist keine verifizierte Lizenz.
+Gewichtung: Integration in Headroom 25, lokale/deterministische Ausführung 20, Kompressionsnutzen 20, Beobachtbarkeit und Reversibilität 20, Wartung/Reife 15 = **100 Punkte**. Stars und SPDX-Lizenzstatus wurden am 20.07.2026 um 17:21 CEST live über die GitHub-Repository-API erhoben; NOASSERTION wird als [UNVERIFIZIERT] markiert und ist keine verifizierte Lizenz.
 
 | Rang | Tool (GitHub) | Lizenz | ⭐ echte Stars | Integration /25 | Lokal /20 | Nutzen /20 | Observability /20 | Reife /15 | Gesamt /100 |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|
@@ -115,7 +115,7 @@ Verwendete Awesome-Quellen:
 | 14 | [liyucheng09/Selective_Context](https://github.com/liyucheng09/Selective_Context) | 423 | 65,5 | self-information pruning |
 | 15 | [carriex/recomp](https://github.com/carriex/recomp) | 148 | 65,5 | RAG-extraktiv/abstraktiv, selektive Augmentation |
 
-Stars sind ein am 20.07.2026 um 17:16 CEST live per GitHub-API erhobener Snapshot und können sich nach dem Erfassungszeitpunkt ändern. Popularität ist absichtlich nur 5/100 Punkte wert.
+Stars sind ein am 20.07.2026 um 17:21 CEST live per GitHub-API erhobener Snapshot und können sich nach dem Erfassungszeitpunkt ändern. Popularität ist absichtlich nur 5/100 Punkte wert.
 
 ## 100-Punkte-Rubrik
 
