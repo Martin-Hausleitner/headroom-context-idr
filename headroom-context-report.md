@@ -14,14 +14,14 @@
 
 ## F1-Abschlussmatrix: Toolauswahl und 100-Punkte-Wertung
 
-Gewichtung: Integration in Headroom 25, lokale/deterministische Ausführung 20, Kompressionsnutzen 20, Beobachtbarkeit und Reversibilität 20, Wartung/Reife 15 = **100 Punkte**. Stars und SPDX-Lizenzstatus wurden am 20.07.2026 über die GitHub-Repository-API erhoben; NOASSERTION ist keine verifizierte Lizenz.
+Gewichtung: Integration in Headroom 25, lokale/deterministische Ausführung 20, Kompressionsnutzen 20, Beobachtbarkeit und Reversibilität 20, Wartung/Reife 15 = **100 Punkte**. Stars und SPDX-Lizenzstatus wurden am 20.07.2026 um 12:27 CEST über die GitHub-Repository-API erhoben; NOASSERTION ist keine verifizierte Lizenz.
 
 | Rang | Tool (GitHub) | Lizenz | ⭐ echte Stars | Integration /25 | Lokal /20 | Nutzen /20 | Observability /20 | Reife /15 | Gesamt /100 |
 |---:|---|---|---:|---:|---:|---:|---:|---:|---:|
-| 1 | 👑 [Headroom](https://github.com/headroomlabs-ai/headroom) | Apache-2.0 | 60.530 | 25 | 18 | 18 | 20 | 13 | **94** |
+| 1 | 👑 [Headroom](https://github.com/headroomlabs-ai/headroom) | Apache-2.0 | 60.540 | 25 | 18 | 18 | 20 | 13 | **94** |
 | 2 | [LLMLingua](https://github.com/microsoft/LLMLingua) | MIT | 6.452 | 18 | 17 | 20 | 15 | 14 | **84** |
 | 3 | [Claw Compactor](https://github.com/open-compress/claw-compactor) | MIT | 2.188 | 22 | 20 | 17 | 12 | 12 | **83** |
-| 4 | [RTK](https://github.com/rtk-ai/rtk) | Apache-2.0 | 71.960 | 16 | 20 | 15 | 16 | 15 | **82** |
+| 4 | [RTK](https://github.com/rtk-ai/rtk) | Apache-2.0 | 71.973 | 16 | 20 | 15 | 16 | 15 | **82** |
 | 5 | [Selective Context](https://github.com/liyucheng09/Selective_Context) | [UNVERIFIZIERT] (NOASSERTION) | 423 | 13 | 17 | 15 | 10 | 8 | **63** |
 
 **Empfehlung:** Headroom bleibt der kanonische Policy-, Proxy- und Mess-Layer. Claw Compactor wird nur als deterministischer, rollensensitiver Kompressionsbaustein eingebunden; LLMLingua bleibt ein selektiver Pfad für lange Prosa/RAG-Kontexte. Die Krone bewertet die Gesamtplattform, nicht den isolierten Kompressionsalgorithmus.
