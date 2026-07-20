@@ -27,7 +27,7 @@
 | 40 Quellen im Manifest | PASS | 40 |
 | Vier echte Browser-Screenshots inkl. GitHub-Render | PASS | headroom-dashboard.png, claw-compactor-github.png, llmlingua-github.png, github-report-rendered.png |
 | Alle lokalen Reportlinks vorhanden | PASS | 9 |
-| Externe Reportlinks erreichbar | PASS | 37 |
+| Externe Reportlinks erreichbar | PASS | 36 |
 | GitHub-Remote ist der öffentliche Ziel-Repo | PASS | https://github.com/Martin-Hausleitner/headroom-context-idr.git |
 | Gerenderter GitHub-Blob öffentlich erreichbar | PASS | https://github.com/Martin-Hausleitner/headroom-context-idr/blob/main/headroom-context-report.md (200) |
 | Live Headroom gesund | PASS | {"status": "healthy", "ready": true, "version": "0.31.0"} |

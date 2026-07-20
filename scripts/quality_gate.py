@@ -39,12 +39,17 @@ def main() -> None:
         checks.append({"name": name, "passed": passed, "evidence": evidence})
 
     report = REPORT.read_text(encoding="utf-8")
-    record("Reportkopf IDR: ja", report.startswith("# IDR: ja"), REPORT.name)
+    header = report.splitlines()[0]
+    header_pattern = (
+        r"^\[ L\d{2} · R\d{3} \] 🟣 Codex · gpt-5\.6-sol · "
+        r"🧠 IDR: ja · 🕐 \d{4}-\d{2}-\d{2} \d{2}:\d{2} CE(?:S)?T$"
+    )
+    record("Reportkopf IDR: ja", re.fullmatch(header_pattern, header) is not None, REPORT.name)
     notebook_url = "https://notebooklm.google.com/notebook/4cbe42bf-f9ec-4c8b-8b6c-e6501f50478b"
     record("NotebookLM-Link im Kopf", notebook_url in "\n".join(report.splitlines()[:10]), notebook_url)
     record("Mermaid-Architektur", "```mermaid" in report and "flowchart LR" in report, "Zielarchitektur")
     record("100-Punkte-Rubrik", "**Gesamt** | **100**" in report, "Rubriktabelle")
-    record("Krone im Report", "👑" in report, "genau eine empfohlene Repo-Krone")
+    record("Krone im Report", report.count("👑") == 1, "genau eine empfohlene Repo-Krone")
 
     with (ROOT / "data" / "repository-matrix.csv").open(newline="", encoding="utf-8") as handle:
         matrix = list(csv.DictReader(handle))

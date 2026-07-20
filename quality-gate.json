@@ -121,7 +121,7 @@
     {
       "name": "Externe Reportlinks erreichbar",
       "passed": true,
-      "evidence": "37"
+      "evidence": "36"
     },
     {
       "name": "GitHub-Remote ist der öffentliche Ziel-Repo",
